@@ -1,0 +1,389 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16.09.2016, 15:46:06
+    Author     : Larysa
+*/
+
+@media screen and (max-width:767px) {
+    /* Header */
+    #logo {
+        height: auto;                        
+        left: 50%;        width: 40px;    }
+    #menu {
+        float: none;        left: 10px;   
+        right: 10px;        top: 80px; /* 20px after logo */
+    }    
+    #menu a {
+        padding: 0 10px;        text-align: left;        
+    }
+    /* Boost up your local business */
+    #boost {
+        margin-top: 20px;        top: 200px;    }    
+    #boostHeader {
+       padding-top: 50px;    }
+    h1 {
+        font-size: 2em;    }
+    #boostSubtitle {
+        margin: 0 10px;    }
+    /* First Conact Form */
+    #contactForm1 {
+        height: auto;        
+        margin: 28px auto 0;
+    }
+    .form_name, .form_phone, .form_email {
+        font-size: 1em;        margin: 5px 5%;        max-width: 700px;        
+        width: 90%;        
+    }
+    ::-moz-placeholder {
+        font-size: 1em;    }  
+    :-moz-placeholder {
+        font-size: 1em;   }
+    ::-webkit-input-placeholder {
+        font-size: 1em;    }
+    :-ms-input-placeholder {
+        font-size: 1em;    }
+    ::-ms-input-placeholder {
+        font-size: 1em;    }
+    
+    .send {
+        display: inline-block;        font-size: 1.125em;        margin: 5px 5% 20px;        max-width: 600px;        
+        width: 90%;        
+    }
+
+    /* Our services */
+    #service1 {
+        margin-top: 230px;    }
+    h2 {
+        margin: 0 20px;    }
+    .pH2 {
+        margin: 0 20px 20px;    }
+    #serviceList2 {
+        margin-top: 50px;    }
+    .iconPicture {
+        height: 35px;        
+        margin-left: 20px;        width: auto;    }
+    .showStyle1 {
+        text-decoration: none;    }
+    h3 {
+        margin: -30px 25px 30px 70px; 
+    }
+    .pH3 {
+        margin: -20px 25px 10px 70px; 
+    }
+/* About Us*/
+    #aboutUs {
+        margin-top: 10px;    }
+    #AboutMargin {
+        margin: 20px auto;        
+        max-width: 505px;        width: 90%;        
+    }
+    #h2AboutMargin {
+        margin: 20px 10px;    }
+    #AboutMargin p {
+        margin: 0 10px 20px;    }
+    #AboutMargin a {
+        margin: 30px 0;        
+        padding: 13px;    }
+
+    /* Choose Your Price*/
+#choosePrice {
+    background-color: #e8edf3;
+}
+    #h2choosePrice {
+        margin-top: 30px;    }
+    #choosePrice p {
+        margin: 0 20px;    }
+    /* Do not delete anything from this block! */
+    .whiteBlock {
+        background-color: #ffffff;
+        border: 1px solid #d1d4db;
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+             -o-border-radius: 3px;
+                border-radius: 3px;
+        color: #bbbbbb;       
+        font-family: 'Lato Light', Tahoma, Geneva, sans-serif;    
+        font-size: 1.25em; 
+        margin: 30px auto;        
+        text-align: center;
+        text-transform: uppercase; 
+        width: 90%;    }
+    .centerBlock {
+        height: auto;        
+        margin: 30px auto;        width: 90%;        
+    }
+    h4 {
+        margin: 30px 10px;    }
+    .priceTable {
+        margin: 0 auto 30px;  
+        width: 90%;        
+    }
+    .tall {
+        height: 100px;    }
+a.get {
+        display: inline-block;        margin: 0 10px 30px;        padding: 10px 25px;        
+    }
+
+    /* How It Works*/
+    #h2How {
+        margin-top: 50px;    }
+    #steps {
+        width: 100%;    
+    }
+    #step1, #step2, #step3, #step4 {
+        float: none;        margin: 0 auto;        width: 90%;        
+    }
+    h5 {
+        margin: 20px;    }
+    .pStep {
+        margin-bottom: 35px;    }
+    #now {
+        margin-bottom: 40px;    }
+
+    /* Happy Clients */
+    #h2Happy {
+        margin-top: 30px;    }
+    #pHappy {
+        margin: 0 20px 35px;    }
+    #orangeTable {
+        margin-bottom: 30px;    }
+    #td1, #td2, #td3, #td4 {
+        border-bottom: 20px solid #ffc056;        
+        border-left: 20px solid #ffc056;        border-right: 20px solid #ffc056;        border-top: 0;        display: block;        
+        text-align: center;        width: 100%;        
+    }
+    .face {
+        margin: 20px;    }
+    .pText {
+        margin: 0 10px 20px; 
+    }
+    blockquote {
+        margin: 0 25px;        
+    }
+    blockquote:before {
+        vertical-align: -10px;    } 
+    blockquote:after {
+        vertical-align: -17px;    } 
+    .pClient {
+        margin: 0;        padding: 10px 20px 20px;     
+    }
+
+    /* Contact Us */
+    #h2Newsletter {
+        margin-top: 50px;    }
+    #contactForm2 {
+        margin: 20px auto 0;    }
+    #map {
+        background-image: none;        
+        height: auto;        margin: 0 auto;        width: 100%;    }
+    #address {
+        background-image: url(../images/circle252.png);        background-size: contain;        
+        height: 312px;                
+        margin-top: 10px;        width: 252px;    }
+    #noPicture {
+        margin: -270px auto 0;        
+        width: 160px;    }
+    #noPicture h6 {
+        padding-top: 10px;    }
+    
+    /* Footer */
+    #footer {
+        margin: 100px auto 40px;    }
+    a.footer {
+        padding: 0 16px;    }
+        
+    /* Sent and Subscribe pages */
+    #thanks {
+        margin-top: 80px;    }
+    #h1Thanks {
+        margin-top: 50px;        
+    }
+    #thanks p {
+        margin: 0 20px 40px;    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+/* Boost up your local business */
+    #boost {
+        top: 115px;    }
+    #boostHeader {
+        padding-top: 90px;    }
+    
+    /* First Contact Form */
+    #contactForm1 {
+        margin: 28px 4% 0;        width: 92%;    }
+    
+    /* Slider */
+    #laptop {
+        margin: -175px auto 0;    }
+    
+    /* Our services */
+    h3 {
+        margin: -55px 0 70px 80px; 
+    }
+    #serviceList11 {
+        margin-right: 30px;    }
+    #serviceList12 {
+        margin-left: 30px;    }
+.pH3 {
+        margin: -55px 0 70px 80px; 
+    }
+    
+    /* About Us*/
+    #AboutMargin {
+        margin: 30px 5% 0;        width: 90%;    }
+    
+    /* Choose Your Price*/
+    #h2choosePrice {
+        margin-top: 100px;    }
+    #whiteBlock {
+        margin: 75px 5% 100px;        width: 90%;    }
+    .fontPrice {
+        font-size: 50px;        line-height: 100%;    }
+    
+    /* How It Works*/
+    #h2How {
+        margin-top: 100px;    }
+    #steps {
+    -webkit-column-count: 2; 
+       -moz-column-count: 2; 
+        -ms-column-count: 2;         -o-column-count: 2;
+            column-count: 2; 
+        margin-top: 55px;        
+        width: 100%;        
+    }
+    #step1, #step2, #step3, #step4 {
+        margin: 0;    }
+    .pStep {
+        margin-bottom: 50px;    }
+    #now {
+        margin-bottom: 100px;    }
+    
+    /* Happy Clients */
+    #h2Happy {
+        margin-top: 100px;    }
+    #orangeTable {
+        margin-bottom: 30px;    }
+    #client1, #client2, #client3, #client4 {
+        text-align: center;    }
+    .face {
+        margin: 20px;    }
+    .pText {
+        margin: 0 10px 20px; 
+    }
+    blockquote {
+        margin: 0 25px;    }
+    .pClient {
+        margin: 8px 10px 48px 25px;     
+    }
+    /* Contact Us */
+    #h2Newsletter {
+        margin-top: 70px;    }
+    #map {
+        background-image: url(../images/dottedMap764.jpg);        height: 386px;        width: 764px;    }  
+    #address {
+        margin: -395px auto 0;    }
+    #noPicture {
+        margin: -290px auto 0;        
+        width: 190px;    }    
+    #h6NoPicture {
+        padding-top: 15px;    }
+    /* Footer */
+    #footer {
+        margin: 130px auto 40px;    }
+
+    /* Sent and Subscribe pages */
+    #thanks {
+        margin-top: 70px;    }
+}
+
+@media screen and (min-width:992px) and (max-width:1099px) {
+    /* About Us */
+    #aboutPicture {
+        background-image: url(images/aboutSmall.jpg);    }
+    /* How It Works*/
+        #steps {
+        width: 990px; 
+    }
+    #imgHow {
+        background-image: url(images/HowSmall.jpg);        height: auto;        
+        margin: 55px 0 35px 60px;        width: 900px;    }
+    #step1, #step2, #step3, #step4 {
+        width: 200px;    }
+    #step1 {
+        margin-left: 0;        
+        margin-right: 0;    }
+    #step2, #step3, #step4 {
+        margin-left: 60px;        
+        margin-right: 0;    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    /* Boost up your local business */
+    #boost {
+        top: 110px;    }
+
+    /* Slider */
+    #laptop {
+        margin: -180px auto 0;    }
+    
+    /* Our services */
+    .pH3 {
+        margin: -55px 0 80px 80px; 
+    }
+
+    /* About Us*/
+    #aboutUs {
+        margin: 0;    }
+    #AboutMargin {
+        margin-left: 40px;        
+        margin-top: 50px;        max-width: 430px;        
+        width: 100%;    }
+
+    /* Choose Your Price*/
+    #choosePrice h2 {
+        margin-top: 90px;    }
+    #whiteBlock {
+        margin: 75px 0 120px 0;    }
+    
+    /* How It Works*/
+    /* Picture and texts are changed only for (min-width:992px) and (max-width:1099px) */
+    #h2How {
+        margin-top: 100px;    }
+    #now {
+        margin-bottom: 100px;    }
+    
+    /* Happy Clients */
+    #h2Happy {
+        margin-top: 100px;    }
+    #orangeTable {
+        margin-bottom: 30px;    }
+    #client1, #client2, #client3, #client4 {
+        text-align: center;    }    
+    .face {
+        margin: 20px;    }
+    .pText {
+        margin: 0 10px 20px; 
+    }
+    blockquote {
+        margin: 0 25px;    }
+    .pClient {
+        margin: 8px 10px 48px 25px;     
+    }
+    
+    /* Contact Us */
+    #h2Newsletter {
+        margin-top: 100px;    }
+    #map {
+        background-image: url(../images/dottedMap990.jpg);        height: 500px;        width: 990px;}
+    #address {
+        margin: -495px auto 0;    }
+    /* Footer */
+    #footer {
+        margin: 280px auto 40px;    }    
+}
