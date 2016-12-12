@@ -1,0 +1,108 @@
+/* Reset CSS */
+html, div, header, section {
+	border: 0;
+	font: inherit;	
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	background: #f5f4f4;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+header, section {
+	display: block;
+}
+
+/* Styles */
+.container {
+	margin: 50px auto 285px;
+	width: 500px;
+}
+h1 {
+	color: #010101;
+	font-family: 'Arial Bold', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 50px;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: baseline;
+}
+img {
+	border: 1px solid #8f8f8f;
+	border-radius: 1px;
+	display: block;
+	margin: 0 auto 22px;	
+}
+.pH1 {
+	color: #1f1f1f;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	text-indent: 0;
+}
+hr {
+	color: #c3c8c4;
+	margin: 20px auto;
+}
+h2 {
+	color: #1f1f1f;
+	/* Arial is used instead of paid Myriad Pro */
+	font-family: 'Arial Bold', Arial, Helvetica, sans-serif;
+	font-size: 0.813em;
+	font-weight: 900;
+	margin-bottom: 26px;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+ul {
+	color: #1f1f1f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.625em;
+	line-height: 1.5;
+	list-style: disc inside;
+	margin: 0;
+	padding-left: 16px;
+	vertical-align: baseline;	
+}
+p {
+	color: #3a3a3a;
+	font-family: 'Arial Bold', Arial, Helvetica, sans-serif;
+	font-size: 0.625em;
+	margin: 0;
+	padding: 0;
+	text-indent: 2.188em;
+	vertical-align: baseline;	
+	
+}
+.profile {
+	margin-bottom: 24px;
+	margin-top: 20px;
+}
+a {
+	color: #0056d3;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;	
+}
+
+/* For small screens */
+@media screen and (max-width: 499px) {
+	.container {
+		margin: 50px auto;
+		width: 90%;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+}
