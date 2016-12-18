@@ -3,7 +3,7 @@
 font-family:Futura; 
 src: url(../fonts/Futura.woff); 
 }
-
+/* проверка */
 html {
     overflow-x:  hidden;
 }
@@ -15,6 +15,7 @@ body {
     margin: 0 auto;        
     max-width: 1200px;
 }
+
 #fixedratio {
     background-color: #e8c9c7;
     background-image: url(../images/head.jpg);
@@ -24,12 +25,14 @@ body {
     position: relative;
     z-index: 1;
 }
+
 #rightcol {
     float: right;
     margin-left: 8%;    
     margin-right: 8%;
     margin-top: -38%;    
 }
+
 a.menu {
     color: #ffffff;
     display: inline-block;    
@@ -39,12 +42,14 @@ a.menu {
     padding-right: 20px;    
     text-transform: uppercase;
 }
+
 a.menu:hover {
     color: #9b59b6;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
 #may {
     font-family: 'Rokkitt', serif;
     font-size: 3.75em;
@@ -54,16 +59,19 @@ a.menu:hover {
     text-align: center;
     text-transform: none;    
     }
+
 #one {
     color: #ffffff;
     text-transform: none;
     }
+
 #one:hover {
     color: #9b59b6;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-}      
+}
+   
 #whiteLine {
     margin: 20px auto;
     width: 50%;
