@@ -1,9 +1,10 @@
 /* Special fonts*/
+/* ffff */
 @font-face {
 font-family:Futura; 
 src: url(../fonts/Futura.woff); 
 }
-/* проверка */
+
 html {
     overflow-x:  hidden;
 }
