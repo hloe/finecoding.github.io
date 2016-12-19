@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="row wow fadeInUp">
-            <div id="button3">
+            <div class="button3">
                 <a href="http://www.finecoding.net/" class="button">Return</a>
             </div>
         </div>
@@ -51,10 +51,10 @@
 </html>
 
 <?php
-                    /**
-                *isset() - проверяет на наличие переменной/значения (равно NULL или нет)
-                *empty() - проверяет переменную на пустоту. Обращаю внимание, 0 - для нее тоже пустота!
-                    **/
+/**
+*isset() - проверяет на наличие переменной/значения (равно NULL или нет)
+*empty() - проверяет переменную на пустоту. Обращаю внимание, 0 - для нее тоже пустота!
+**/
 if( isset($_POST['name'],$_POST['email'],$_POST['text']) ) {
  $name = trim($_POST['name']); #убираем пробелы по краям, если они есть
  $email = trim($_POST['email']); #убираем пробелы по краям, если они есть

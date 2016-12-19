@@ -1,4 +1,5 @@
 /* Special fonts*/
+
 @font-face {
 font-family:Futura; 
 src: url(../fonts/Futura.woff); 
@@ -7,15 +8,16 @@ src: url(../fonts/Futura.woff);
 html {
     overflow-x:  hidden;
 }
-body {
-    margin: 0;
-}
+
+
 /* Header */
-#header {
+
+.header {
     margin: 0 auto;        
     max-width: 1200px;
 }
-#fixedratio {
+
+.fixedratio {
     background-color: #e8c9c7;
     background-image: url(../images/head.jpg);
     background-position: center; 
@@ -24,28 +26,46 @@ body {
     position: relative;
     z-index: 1;
 }
-#rightcol {
+
+nav {
     float: right;
     margin-left: 8%;    
     margin-right: 8%;
     margin-top: -38%;    
 }
-a.menu {
-    color: #ffffff;
+
+.menu ul {
+	font-size: 0;
+	letter-spacing: -1px;
+	line-height: 0;	
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu a {
+    color: #fff;
     display: inline-block;    
     font-family: Futura, 'Trebuchet MS', Helvetica, sans-serif;
     font-size: 1.313em;
+	font-stretch: ultra-condensed;
     letter-spacing: 0.188em;
+	line-height: 1.313em;
     padding-right: 20px;    
     text-transform: uppercase;
 }
-a.menu:hover {
+
+.menu a:hover {
     color: #9b59b6;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
-#may {
+
+.may {
     font-family: 'Rokkitt', serif;
     font-size: 3.75em;
     line-height: 0.5;
@@ -54,22 +74,28 @@ a.menu:hover {
     text-align: center;
     text-transform: none;    
     }
-#one {
-    color: #ffffff;
+
+.may a {
+    color: #fff;
     text-transform: none;
     }
-#one:hover {
+
+.may a:hover {
     color: #9b59b6;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;	
     transition: all 0.3s ease-out;
-}      
-#whiteLine {
+}  
+
+.whiteLine {
     margin: 20px auto;
     width: 50%;
 }
-#withLove {
-    color: #ffffff;    
+
+.withLove {
+    color: #fff;    
     font-family: 'Quicksand', sans-serif;
     font-size: 1.563em;
     line-height: 0.5;
@@ -77,12 +103,17 @@ a.menu:hover {
     text-align: center;
 }
 
+
 /* Go ahead */
+
 a.button {
     background-color: #a56abd;
     background-color: rgba(155, 89, 182, 0.9);
     border-radius: 2px;
-    color: #ffffff;    
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box;
+    color: #fff;    
     display: block;
     font-family: 'Rokkitt', serif;
     font-size: 1.75em;    
@@ -94,18 +125,23 @@ a.button {
     width: 200px;
     
 }
+
 a.button:hover {
     background-color: #d175a3;
     background-color: rgba(204, 102, 153, 0.9);
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;	
     transition: all 0.3s ease-out;
 }
-#button1 {
+
+.button1 {
     margin: -35px auto 0;
     position: relative;
     width: 200px;    
     z-index: 3;
 }
+
 h1 {
     color: #9b59b6;    
     font-family: 'MS Sans Serif', Geneva, sans-serif;
@@ -116,6 +152,7 @@ h1 {
     text-align: center;    
     text-transform: uppercase;
 }
+
 p {
     color: #95a5a6;        
     font-family: Tahoma, Geneva, sans-serif;
@@ -123,11 +160,13 @@ p {
     line-height: 1.5;
     text-align: center;   
 }
-#columnContainer {
+
+.columnContainer {
     display: block;
     margin: 50px 0 0;
     width: 100%;
 }
+
 .columnBig {
     color: #95a5a6;  
     display: inline-block;
@@ -139,15 +178,18 @@ p {
     vertical-align: top;
     width: 26%;
 }
+
 .columnBig p {
     font-family: Tahoma, Geneva, sans-serif;    
     font-size: 1em;    
     text-align: justify;
 }
+
 .iconFont {
     color: #9b59b6;
     font-size: 2.625em;
 }
+
 h2 {
     color: #9b59b6;    
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -157,6 +199,7 @@ h2 {
     margin-top: 0;    
     text-align: center;
 }
+
 .column {
     font-size: 1.063em;
     line-height: 1.8;
@@ -166,13 +209,16 @@ h2 {
 hr {
     margin: 70px auto;
 }
+
 .portImg {
     display: block;
     height: auto;
     width: 100%;
 }
 
+
 /* Pictures */
+
 h3 {
     color: #9b59b6;    
     font-family: 'MS Sans Serif', Geneva, sans-serif;
@@ -182,34 +228,41 @@ h3 {
     text-align: center;    
     text-transform: uppercase;
 }
+
 .columnBig1 {
     display: inline-block;
     margin: 0 2%;
     vertical-align: top;
     width: 20%;
 }
+
 .img_block {
     cursor: default;    
     display: inline-block;
     margin-bottom: 30px;
-    opacity: 0.9;   
+    opacity: .9;   
     padding: 0;    
     position: relative;
     width: 100%;
 }
+
 .img_block .over_block {
     left: 0;    
     padding: 0;
     position: absolute;
     top: 0;
     -webkit-transition: all 0.9s ease-out 1s;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;	
     transition: all 0.9s ease-out 1s;    
     z-index: 9;
 }
+
 .img_block:hover, .over_block {
     display:block;
     opacity: 1;
 }
+
 .img_block span {
     background-color: #a56abd;
     background-color: rgba(155, 89, 182, 0.9);
@@ -221,26 +274,33 @@ h3 {
     overflow: hidden;
     position: absolute;    
     -webkit-transition: all 0.9s ease-out 1s;
+    -moz-transition: all 0.9s ease-out 1s;
+    -o-transition: all 0.9s ease-out 1s;	
     transition: all 0.9s ease-out 1s;
     width: 100%;
     z-index: 10;    
 }
+
 .img_block:hover span {
     bottom:0;
-    color: #ffffff;
+    color: #fff;
     font-family: 'Rokkitt', serif;
     font-size: 1.25em;    
     height: 1.625em;
     text-align: center;
 }
 
+
 /* View more */
-#button2 {
+
+.button2 {
     margin: 70px auto;
     width: 200px;
 }
 
+
 /* Contact Form */
+
 h4 {
     color: #9b59b6;    
     font-family: 'Rokkitt', serif;
@@ -252,26 +312,31 @@ h4 {
 *:focus {
     outline-width: 0;
 }
+
 ::-webkit-input-placeholder {
     color: #cecece;    
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;
 }
+
 ::-moz-placeholder {
     color: #cecece;    
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;
 }
+
 :-moz-placeholder {
     color: #cecece;    
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;
 }
+
 :-ms-input-placeholder {
     color: #cecece;        
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;
 }
+
 ::-ms-input-placeholder {
     color: #cecece;        
     font-family: 'Rokkitt', serif;
@@ -279,19 +344,24 @@ h4 {
 }
 
 .contact_form {
-    color: grey;    
+    color: #808080;    
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;
 }
+
 .pForm {
     margin: 0;    
     text-align: justify;
 }
-input[type="text"], input[type="email"]
-{
+
+input[type="text"], 
+input[type="email"] {
     background-color: #e4e8e8;    
     border: 0;
-    color: grey;    
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;		
+	box-sizing: border-box;
+    color: #808080;    
     display: block;    
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;
@@ -299,21 +369,28 @@ input[type="text"], input[type="email"]
     padding-left: 1em;    
     width: 44%;
 }
+
 input[type="text"] {
     float: left;
     margin: 0 1% 30px 5%;
 }
+
 input[type="email"] {
     float: right;
     margin: 0 5% 30px 1%;    
 }
+
 textarea:focus {
     outline-width: 0;
 }
+
 textarea {
     background-color: #e4e8e8;
-    border: 0;    
-    color: grey;    
+    border: 0;  
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;		
+	box-sizing: border-box;
+    color: #808080;    
     display: block;
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;
@@ -325,30 +402,37 @@ textarea {
     resize: none;
     width: 90%;    
 }
+
 textarea::-webkit-input-placeholder {
     color: #cecece;
 }
+
 textarea:-moz-placeholder {
     color: #cecece;
 }
+
 textarea::-moz-placeholder {
     color: #cecece;
 }
+
 textarea:-ms-input-placeholder {
     color: #cecece;
 }
+
 textarea::-ms-input-placeholder {
     color: #cecece;
 }
-button.submit {
-    -ms-flex-item-align: center;
-    align-self: center;  
+
+button {
     background-color: #a56abd;
     background-color: rgba(155, 89, 182, 0.9);
     border: none;
     border-radius: 3px;
     box-shadow: none;
-    color: #ffffff;    
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;		
+	box-sizing: border-box;
+    color: #fff;    
     display: inline-block;
     font-family: 'Rokkitt', serif;
     font-size: 1.188em;  
@@ -361,73 +445,88 @@ button.submit {
     vertical-align: middle;
     width: 220px;    
 }
-button.submit:hover {
+
+button:hover {
     background-color: #d175a3;
     background-color: rgba(204, 102, 153, 0.9);
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;	
     transition: all 0.3s ease-out;    
 }
-#pButton {
+
+.pButton {
     margin-bottom: 100px;
     text-align: center;     
 }
 
+
 /* Button Up's styles' */
-#scrollup {
+
+.scrollup {
     bottom: 10px;  
     cursor: pointer;
     display: none;     
     float: right;    
-    opacity: 0.9;     
+    opacity: .9;     
     padding: 10px;     
     position: fixed; 
     right: 10px; 
     z-index: 20;
 }
 
+
 /* Footer */
-#footer {
+
+footer {
     background-color: #9b59b6;
 }
-#footer a {
-    color: #ffffff;    
+
+footer a {
+    color: #fff;    
     font-family: 'Rokkitt', serif;
     font-size: 1.438em;
     text-decoration: none;    
     text-transform: none;
 }
-#footer a:hover {
+
+footer a:hover {
     color: #ffeb77;    
     text-decoration: none;
 }
-#footer p {
-    color: #ffffff;    
+
+footer p {
+    color: #fff;    
     font-family: 'Rokkitt', serif;
     font-size: 1.438em;
     line-height: 1.8;    
     text-align: right;
     vertical-align: middle;
 }
-#footer ul {
+
+footer ul {
     list-style-type: none;    
     margin-top: 100px;
     padding: 10px;
 }
-#footer li {
-    color: #ffffff;    
+
+footer li {
+    color: #fff;    
     font-family: 'Rokkitt', serif;
     font-size: 1.5em;
     line-height: 1.5;    
     text-align: right;
     vertical-align: middle;
 }
-#footerLeft {
+
+.footerLeft {
     bottom: 10px;    
     float: left;
     left: 10px;
     margin-top: 100px;
     position: relative;    
 }
+
 .footerIcons {
     display: block;
     float: right;
@@ -437,12 +536,16 @@ button.submit:hover {
     position: relative;
     width: 40px;
 }
+
 table {
     margin: 0 auto;
     width: 100%;    
 }
+
+
 /* Message */
-#button3 {
+
+.button3 {
     margin: 50px auto;
     width: 200px;
 }

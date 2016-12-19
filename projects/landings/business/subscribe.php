@@ -33,7 +33,7 @@ file_put_contents($file, '   ', FILE_APPEND | LOCK_EX);
     <body>
         
         <div class="row">
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" id="thanks">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" class="thanks">
                 <h1 class="wow fadeInUp">
                     You have been succesfully subscribed to the newsletter
                 </h1>
