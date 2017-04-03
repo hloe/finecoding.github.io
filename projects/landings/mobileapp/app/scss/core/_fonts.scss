@@ -4,8 +4,7 @@
 	src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
 		url('Raleway-Regular.woff2') format('woff2'),
 		url('Raleway-Regular.woff') format('woff'),
-		url('Raleway-Regular.ttf') format('truetype'),
-		url('Raleway-Regular.svg#Raleway-Regular') format('svg');
+		url('Raleway-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -16,8 +15,7 @@
 	src: url('Raleway-Bold.eot?#iefix') format('embedded-opentype'),
 		url('Raleway-Bold.woff2') format('woff2'),
 		url('Raleway-Bold.woff') format('woff'),
-		url('Raleway-Bold.ttf') format('truetype'),
-		url('Raleway-Bold.svg#Raleway-Bold') format('svg');
+		url('Raleway-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -28,9 +26,19 @@
 	src: url('Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
 		url('Raleway-SemiBold.woff2') format('woff2'),
 		url('Raleway-SemiBold.woff') format('woff'),
-		url('Raleway-SemiBold.ttf') format('truetype'),
-		url('Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+		url('Raleway-SemiBold.ttf') format('truetype');
 	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans.eot');
+	src: url('OpenSans.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans.woff2') format('woff2'),
+		url('OpenSans.woff') format('woff'),
+		url('OpenSans.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -40,8 +48,7 @@
 	src: url('OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
 		url('OpenSans-Semibold.woff2') format('woff2'),
 		url('OpenSans-Semibold.woff') format('woff'),
-		url('OpenSans-Semibold.ttf') format('truetype'),
-		url('OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+		url('OpenSans-Semibold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 }
@@ -52,8 +59,7 @@
 	src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
 		url('OpenSans-Bold.woff2') format('woff2'),
 		url('OpenSans-Bold.woff') format('woff'),
-		url('OpenSans-Bold.ttf') format('truetype'),
-		url('OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+		url('OpenSans-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -64,9 +70,9 @@
 	src: url('HelveticaNeue-BoldItalic.eot?#iefix') format('embedded-opentype'),
 		url('HelveticaNeue-BoldItalic.woff2') format('woff2'),
 		url('HelveticaNeue-BoldItalic.woff') format('woff'),
-		url('HelveticaNeue-BoldItalic.ttf') format('truetype'),
-		url('HelveticaNeue-BoldItalic.svg#HelveticaNeue-BoldItalic') format('svg');
+		url('HelveticaNeue-BoldItalic.ttf') format('truetype');
 	font-weight: bold;
 	font-style: italic;
 }
+
 

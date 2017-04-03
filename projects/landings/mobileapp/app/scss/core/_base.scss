@@ -1,1 +1,93 @@
 @import "_fonts.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+a {
+  text-decoration: none;
+}
+
+h1 {
+  @include raleway-bold;
+  font-size: 42px;
+  text-transform: capitalize;
+}
+
+h2 {
+  @include raleway-bold;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include raleway-bold;
+  font-size: 18px;
+}
+
+h4 {
+  @include opensans-bold;
+  font-size: 16px;
+}
+
+button {
+  @include opensans-semibold;
+  border-radius: 3px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+iframe {
+  background-color: $iframe-background;
+  border-radius: 8px;
+}
+
+blockquote {
+  @include opensans-regular;
+  display: block;
+  font-size: 18px;
+  line-height: 2;
+  padding: 0 65px;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 auto;
+  max-width: 938px;
+  position: relative;
+}
+
+blockquote:before {
+  color: $quotes;
+  content: '\201c';
+  font-family: Georgia, serif;
+  font-size: 150px;
+  line-height: .24;
+  left: 0;
+  position: absolute;
+  top: 30px;
+}
+
+blockquote:after {
+  bottom: -30px;
+  color: $quotes;
+  content: '\201d';
+  font-family: Georgia, serif;
+  font-size: 150px;
+  line-height: .24;
+  right: 0;
+  position: absolute;
+}
+
+input[type="text"],
+input[type="email"] {
+  @include opensans-regular;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  @include opensans-regular;
+  border-radius: 3px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+textarea {
+  @include opensans-regular;
+  font-size: 16px;
+}
