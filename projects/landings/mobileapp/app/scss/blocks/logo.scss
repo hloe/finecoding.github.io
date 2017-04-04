@@ -1,0 +1,9 @@
+@import "../core/_core.scss";
+.logo {
+  @include raleway-semibold;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  &__link {
+    color: $colored-text;
+  }
+}

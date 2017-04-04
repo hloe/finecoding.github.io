@@ -1,0 +1,52 @@
+@import "../core/_core.scss";
+.nav {
+  background-color: $nav-background;
+  box-shadow: 0 1px 4px 0 $shadow;
+  display: inline-block;
+  margin: 0 15px;
+  @media (min-width: 768px) {
+    display: block;
+    height: 80px;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
+  }
+  &__logo {
+    line-height: 80px;
+    text-align: center;
+    @media (min-width: 768px) {
+      margin: 0;
+      text-align: left;
+    }
+  }
+  &__list {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    @media (min-width: 768px) {
+      display: block;
+      height: 80px;
+    }
+  }
+  &__menu__item {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    width: 33.33%;
+    @media (min-width: 768px) {
+      display: inline-block;
+      height: 80px;
+      line-height: 80px;
+      text-align: left;
+      vertical-align: -48px;
+      width: auto;
+    }
+  }
+  &__menu__link {
+    display: block;
+  }
+}

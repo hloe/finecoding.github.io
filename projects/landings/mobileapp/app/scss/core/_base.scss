@@ -7,30 +7,30 @@ a {
 
 h1 {
   @include raleway-bold;
-  font-size: 42px;
+  font-size: 2.625rem;
   text-transform: capitalize;
 }
 
 h2 {
   @include raleway-bold;
-  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
 }
 
 h3 {
   @include raleway-bold;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h4 {
   @include opensans-bold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 button {
   @include opensans-semibold;
   border-radius: 3px;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: capitalize;
 }
 
@@ -42,7 +42,7 @@ iframe {
 blockquote {
   @include opensans-regular;
   display: block;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 2;
   padding: 0 65px;
   text-align: justify;
@@ -56,7 +56,7 @@ blockquote:before {
   color: $quotes;
   content: '\201c';
   font-family: Georgia, serif;
-  font-size: 150px;
+  font-size: 9.375rem;
   line-height: .24;
   left: 0;
   position: absolute;
@@ -68,7 +68,7 @@ blockquote:after {
   color: $quotes;
   content: '\201d';
   font-family: Georgia, serif;
-  font-size: 150px;
+  font-size: 9.375rem;
   line-height: .24;
   right: 0;
   position: absolute;
@@ -77,17 +77,17 @@ blockquote:after {
 input[type="text"],
 input[type="email"] {
   @include opensans-regular;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 input[type="submit"] {
   @include opensans-regular;
   border-radius: 3px;
-  font-size: 22px;
+  font-size: 1.375rem;
   text-transform: uppercase;
 }
 
 textarea {
   @include opensans-regular;
-  font-size: 16px;
+  font-size: 1rem;
 }
