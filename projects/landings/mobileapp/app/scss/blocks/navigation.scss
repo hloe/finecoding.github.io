@@ -1,12 +1,13 @@
 @import "../core/_core.scss";
 .nav {
-  background-color: $nav-background;
-  box-shadow: 0 1px 4px 0 $shadow;
+  background-color: $white;
+  box-shadow: 0 1px 4px 0 $black;
   display: inline-block;
-  margin: 0 15px;
+  width: 96%;
   @media (min-width: 768px) {
     display: block;
     height: 80px;
+    margin: 0 auto;
   }
   @media (min-width: 1200px) {
     margin: 0 auto;
@@ -38,11 +39,14 @@
     vertical-align: middle;
     width: 33.33%;
     @media (min-width: 768px) {
+      width: auto;
+    }
+    @media (min-width: 768px) {
       display: inline-block;
       height: 80px;
       line-height: 80px;
       text-align: left;
-      vertical-align: -48px;
+      vertical-align: -3rem;
       width: auto;
     }
   }

@@ -1,0 +1,10 @@
+@import "../core/_core.scss";
+.button {
+  border-width: 0;
+  height: 49px;
+  width: 212px;
+  &__download {
+    background-color: $colored-text;
+    color: $white;
+  }
+}

@@ -51,15 +51,15 @@
    ]]></style></defs><g id="Layer_x0020_1"><path class="fil0" d="M292 114c0-23-19-42-42-42s-42 19-42 42 19 42 42 42 42-19 42-42zm-67 0c0-14 11-25 25-25s25 11 25 25-11 25-25 25-25-11-25-25z" id="_146859552"/><path class="fil0" d="M250 361l6-8c5-6 111-137 111-222C367 62 314 6 250 6S133 62 133 131c0 86 106 217 110 222l6 8zm0-339c55 0 100 49 100 109 0 68-77 173-100 203-23-30-100-135-100-203 0-60 45-109 100-109z" id="_146859528"/><path class="fil0" d="M69 273L4 390c-6 10-6 23 1 33 6 10 17 16 29 16h434c12 0 23-6 29-16s6-23 1-33l-65-117c-6-11-17-17-29-17h-60c-5 0-8 4-8 8 0 5 4 8 8 8h60c6 0 12 3 14 9l65 117c3 5 3 11 0 16s-8 8-14 8H35c-6 0-11-3-14-8s-3-11 0-16l65-117c3-5 8-9 14-9h60c5 0 8-4 8-8 0-5-4-8-8-8h-60c-12 0-23 7-29 17z" id="_146860056"/></g>
 </symbol>
 <symbol id="pointer" viewBox="0 0 375 500"><defs><style><![CDATA[
-    .fil0 {fill:none;fill-rule:nonzero}
+    .fil0 {fill:#ffffff;}
    ]]></style></defs><g id="Layer_x0020_1"><path class="fil0" d="M333 291h-3c-7 0-13 4-21 7v-1c0-19-15-36-34-36h-3c-7 0-14 4-21 8v-1c0-19-14-36-34-36h-3c-7 0-15 4-22 8v-86c0-19-14-33-33-33h-3c-19 0-38 14-38 33v221l-32-32c-7-6-15-10-24-10s-18 4-24 10l-2 2c-7 6-10 15-10 24s4 18 10 24l85 94c6 6 14 10 22 10h196c14 0 25-9 28-22h1V326c0-19-16-36-35-36zm20 178c0 8-7 14-15 14H142c-4 0-8-2-11-5l-86-94c-4-4-6-9-6-14s2-10 6-14l2-2c4-4 9-6 14-6s9 2 13 6l57 56V154c0-11 12-18 23-18h3c11 0 18 7 18 18v110h16c2-9 11-18 21-18h3c11 0 19 11 19 21v25h15c2-9 11-18 21-18h3c11 0 20 11 20 22v25l15 1c2-9 11-17 20-17h3c11 0 20 9 20 20v143z" id="_149683728"/><path class="fil0" d="M59 128H7v15h52z" id="_149683464"/><path class="fil0" d="M162 3h-15v52h15z" id="_149684136"/><path class="fil0" d="M102 78L64 41 53 51l39 38z" id="_149684472"/><path class="fil0" d="M258 143h51v-15h-51z" id="_149684616"/><path class="fil0" d="M260 51l-11-10-38 37 10 11z" id="_149684496"/></g>
 </symbol>
   <symbol id="angle-right"><defs><style><![CDATA[
-    .fil0 {fill:#ffffff;fill-rule:nonzero}
+    .fil0 {fill:#ffffff;}
    ]]></style></defs><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><g id="icomoon-ignore"></g>
 <path d="M19.159 16.767l0.754-0.754-6.035-6.035-0.754 0.754 5.281 5.281-5.256 5.256 0.754 0.754 3.013-3.013z" fill="#000000"></path>
 </svg></symbol>
 <symbol id="windows" viewBox="0 0 458 458"><defs><style><![CDATA[
-    .fil0 {fill:none;fill-rule:nonzero}
+    .fil0 {fill:#ffffff}
    ]]></style></defs><g id="Layer_x0020_1"><path class="fil0" d="M7 214V70l178-24v169H7zM214 41L451 7v207H214V41zm237 203v207l-237-33V244h237zM184 414L6 390V244h178v170z" id="_162212688"/></g>
 </symbol></svg>
