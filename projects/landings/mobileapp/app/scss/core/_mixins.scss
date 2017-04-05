@@ -1,41 +1,51 @@
+@mixin clearfix {
+&:after {
+clear: both;
+content: '.';
+display: block;
+height: 0;
+visibility: hidden;
+}
+}
+
 @mixin raleway-regular {
-  font-family: 'Raleway';
-  font-weight: normal;
-  font-style: normal;
+font-family: 'Raleway';
+font-weight: normal;
+font-style: normal;
 }
 
 @mixin raleway-bold {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-style: normal;
+font-family: 'Raleway';
+font-weight: bold;
+font-style: normal;
 }
 
 @mixin raleway-semibold {
-  font-family: 'Raleway';
-  font-weight: 600;
-  font-style: normal;
+font-family: 'Raleway';
+font-weight: 600;
+font-style: normal;
 }
 
 @mixin opensans-regular {
-  font-family: 'Open Sans';
-  font-weight: normal;
-  font-style: normal;
+font-family: 'Open Sans';
+font-weight: normal;
+font-style: normal;
 }
 
 @mixin opensans-bold {
-  font-family: 'Open Sans';
-  font-weight: bold;
-  font-style: normal;
+font-family: 'Open Sans';
+font-weight: bold;
+font-style: normal;
 }
 
 @mixin opensans-semibold {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-style: normal;
+font-family: 'Open Sans';
+font-weight: 600;
+font-style: normal;
 }
 
 @mixin helvetica {
-  font-family: 'Helvetica Neue';
-  font-weight: bold;
-  font-style: italic;
+font-family: 'Helvetica Neue';
+font-weight: bold;
+font-style: italic;
 }

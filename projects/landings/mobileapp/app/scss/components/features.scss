@@ -1,0 +1,19 @@
+@import "../core/_core.scss";
+.features {
+  margin-top: -13px;
+  color: $gray-text;
+  &__title {}
+  &__text {
+    @include opensans-regular;
+    font-size: 1.125rem;
+    line-height: 2;
+    margin-top: 56px;
+    text-align: center;
+  }
+  &__content {
+    margin-top: 76px;
+    &__item_text {
+      padding-top: 79px;
+    }
+  }
+}
