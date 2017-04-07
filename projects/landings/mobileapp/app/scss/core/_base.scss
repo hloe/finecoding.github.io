@@ -17,16 +17,6 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
-  @include raleway-bold;
-  font-size: 1.125rem;
-  line-height: 1;
-}
-
-h4 {
-  @include opensans-bold;
-  font-size: 1rem;
-}
 
 button {
   @include opensans-semibold;
@@ -37,9 +27,8 @@ button {
 
 iframe {
   background-color: $iframe-background;
-  border-radius: 8px;
-  overflow: hidden;
 }
+
 blockquote {
   @include opensans-regular;
   display: block;

@@ -1,0 +1,47 @@
+@import "../core/_core.scss";
+.user-card {
+  position: relative;
+  z-index: 3;
+  &__title {
+    margin-bottom: 36px;
+  }
+  &__text {
+    @include opensans-semibold;
+    color: $team-text;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 105px;
+    opacity: .8;
+  }
+}
+
+.hover {
+  background-color: $aqua-background;
+  background-color: $aqua-background-transparent;
+  color: $white;
+  font-size: 1rem;
+  height: 282px;
+  line-height: 1.5;
+  padding: 18px 23px 0;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 224px;
+  z-index: 4;
+  &__title {
+    margin-bottom: 36px;
+  }
+  &__text {
+    @include opensans-semibold;
+    //    color: $team-text;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 105px;
+    opacity: .8;
+  }
+  &__icons {
+    left: 25%;
+    top: 237px;
+    position: absolute;
+  }
+}

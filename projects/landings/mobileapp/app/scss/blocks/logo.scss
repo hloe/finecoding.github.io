@@ -1,9 +1,6 @@
 @import "../core/_core.scss";
 .logo {
   @include raleway-semibold;
+  color: $logo-color;
   font-size: 1.875rem;
-  line-height: 1.2;
-  &__link {
-    color: $logo-color;
-  }
 }

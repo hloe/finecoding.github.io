@@ -4,14 +4,7 @@
   display: flex;
   padding-left: 80px;
   width: 325px;
-  &__icon {
-    background-color: $green-icon-backrground;
-    display: block;
-    float: left;
-    height: 40px;
-    margin-right: 42px;
-    width: 40px;
-  }
+  &__icon {}
   &__body {
     float: right;
     flex-grow: 1;
@@ -36,3 +29,4 @@
     width: 418px;
   }
 }
+

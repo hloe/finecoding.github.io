@@ -10,7 +10,13 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var rigger = require('gulp-rigger');
-//var sourcemaps = require('gulp-sourcemaps');
+
+var svgSprite = require("gulp-svg-sprites");
+gulp.task('sprites', function () {
+    return gulp.src('app/i/*.svg')
+        .pipe(svgSprite())
+        .pipe(gulp.dest('app/i'));
+});
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss')

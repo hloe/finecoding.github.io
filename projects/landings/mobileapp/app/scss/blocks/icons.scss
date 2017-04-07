@@ -1,0 +1,119 @@
+@import "../core/_core.scss";
+.icon {
+  display: inline-block;
+}
+
+.icon-download {
+  fill: $white;
+  float: left;
+  left: 14px;
+  height: 35px;
+  position: relative;
+  top: 8px;
+  width: 37px;
+}
+
+.icon-angle {
+  fill: $white;
+  height: 32px;
+  line-height: 2.25;
+  vertical-align: middle;
+  width: 32px;
+}
+
+.icon-face,
+.icon-location,
+.icon-like,
+.icon-earphones,
+.icon-finger,
+.icon-compass {
+  fill: $logo-color;
+}
+
+.icon-face,
+.icon-location,
+.icon-like,
+.icon-compass {
+  height: 43px;
+  width: 44px;
+}
+
+.icon-earphones {
+  height: 40px;
+  width: 35px;
+}
+
+.icon-finger {
+  height: 38px;
+  width: 30px;
+}
+
+.icon-circle {
+  background-color: $system;
+  border-radius: 50%;
+  display: inline-block;
+  height: 68px;
+  margin-right: 20px;
+  width: 68px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.icon-apple,
+.icon-android,
+.icon-windows {
+  fill: $white;
+  height: 34px;
+  padding-top: 17px;
+  padding-left: 17px;
+  width: 34px;
+}
+
+.icon-square {
+  background: $transparent-black;
+  display: inline-block;
+  height: 31px;
+  width: 42px;
+  padding-top: 9px;
+  margin-right: 4px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.icon-twitter,
+.icon-facebook,
+.icon-google-plus {
+  fill: $white;
+  height: 21px;
+  width: 23px;
+}
+
+.facebook-circle,
+.twitter-circle,
+.google-circle {
+  border-radius: 50%;
+  display: inline-block;
+  height: 32px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 32px;
+}
+
+.facebook-circle,
+.twitter-circle {
+  margin-right: 15px;
+}
+
+.facebook-circle {
+  background-color: $facebook;
+}
+
+.twitter-circle {
+  background-color: $twitter;
+}
+
+.google-circle {
+  background-color: $google;
+}

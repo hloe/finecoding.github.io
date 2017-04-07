@@ -1,14 +1,14 @@
 @import "../core/_core.scss";
 .watch {
   @include clearfix;
-  background-color: $video-background;
-  &__description {
-    padding-top: 74px;
+  &__content {
+    padding-top: 72px;
+    padding-bottom: 66px;
   }
   &__title {
     margin-bottom: 19px;
   }
-  &__text {
+  &__subtitle {
     @include opensans-regular;
     color: $white;
     font-size: 1rem;
@@ -19,18 +19,16 @@
       max-width: 550px;
       width: 100%;
     }
-    @media (min-width: 1100px) {}
   }
-  &__icon {
-    background: url('../i/apple.svg');
-    height: 40px;
-    width: 40px;
+  &__icons {
+    margin-top: 22px;
   }
-  &__video {
+  &__container {
     margin: 0 auto;
-    padding-bottom: 66px;
-    padding-top: 71px;
-    @media (min-width: 768px) and (max-width: 991px) {
+    overflow: hidden;
+    border: 2px solid $video-background;
+    border-radius: 8px;
+    @media (min-width: 768px) {
       height: 306px;
       width: 500px;
     }
@@ -48,17 +46,11 @@
       height: 306px;
       width: 500px;
     }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      height: auto;
-      min-height: 286px;
-      min-width: 470px;
-      width: 100%;
-    }
-  }
-  &__border {
-    border: 2px solid $video-background;
-    border-radius: 8px;
-    display: block;
-    z-index: 20;
+    //    @media (min-width: 992px) and (max-width: 1199px) {
+    //      height: auto;
+    //      min-height: 286px;
+    //      min-width: 470px;
+    //      width: 100%;
+    //    }
   }
 }

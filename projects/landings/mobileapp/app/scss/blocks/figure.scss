@@ -1,0 +1,26 @@
+@import "../core/_core.scss";
+.figure {
+  display: block;
+  position: relative;
+    &__img {
+    height: 300px;
+    width: 270px;
+  }
+
+  &__title {
+    @include opensans-semibold;
+    color: $team-text;
+    line-height: 1.333;
+    margin-bottom: 5px;
+    margin-top: 12px;
+    font-size: 1.125rem;
+  }
+  &__text {
+    @include opensans-regular;
+    color: $alternative-gray;
+    color: $team-text;
+    font-size: .813rem;
+    line-height: 1.846;
+    opacity: .56;
+  }
+}

@@ -1,10 +1,16 @@
 @import "../core/_core.scss";
 .button {
   border-width: 0;
+  display: block;
   height: 49px;
   width: 212px;
   &__download {
-    background-color: $logo-color;
+    background-color: $button;
     color: $white;
+    &__text {
+      line-height: 49px;
+      margin-left: 25px;
+      vertical-align: middle;
+    }
   }
 }

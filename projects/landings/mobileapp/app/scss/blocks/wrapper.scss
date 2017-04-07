@@ -1,0 +1,49 @@
+@import "../core/_core.scss";
+.wrapper {
+  &__header {
+    overflow: hidden;
+    background-color: $header-background;
+    @include retina('../images/header-background-xs.jpg', 2, cover, top center no-repeat);
+    @media (min-width: 768px) {
+      @include retina('../images/header-background-sm.jpg', 2, cover, top center no-repeat);
+    }
+    @media (min-width: 992px) {
+      @include retina('../images/header-background-md.jpg', 2, auto 573px, top center no-repeat);
+    }
+    @media (min-width: 1100px) {
+      @include retina('../images/header-background-lg.jpg', 2, auto 758px, top center no-repeat);
+    }
+  }
+  &__shadow {
+    @media (min-width: 1215px) {
+      @include retina('../images/shadow.png', 2, 943px 840px, bottom right no-repeat);
+      height: 944px;
+      width: 1589px;
+    }
+  }
+  &__features {
+    background-color: $white;
+    top: 758px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &__watch {
+    background-color: $video-background;
+  }
+  &__contact {
+    background-color: $footer-background;
+    @include retina('../images/footer-background-xs.jpg', 2, cover, top center no-repeat);
+    @media (min-width: 768px) {
+      @include retina('../images/footer-background-sm.jpg', 2, cover, top center no-repeat);
+    }
+    @media (min-width: 992px) {
+      @include retina('../images/footer-background-md.jpg', 2, cover, top center no-repeat);
+      margin-top: 70px;
+    }
+    @media (min-width: 1100px) {
+      @include retina('../images/footer-background-lg.jpg', 2, cover, top center no-repeat);
+      margin-top: 173px;
+    }
+  }
+}

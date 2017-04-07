@@ -1,9 +1,9 @@
 @import "../core/_core.scss";
 .features {
-  margin-top: -13px;
+  padding-top: 121px;
   color: $gray-text;
-  &__title {}
-  &__text {
+  z-index: 6;
+  &__subtitle {
     @include opensans-regular;
     font-size: 1.125rem;
     line-height: 2;

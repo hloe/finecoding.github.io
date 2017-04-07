@@ -1,0 +1,20 @@
+@import "core/_core.scss";
+.button__download:hover {
+  background-color: $button-hover;
+}
+
+.icon-circle:hover {
+  background-color: $system-hover;
+}
+
+.facebook-circle:hover {
+  background-color: $facebook-hover;
+}
+
+.twitter-circle:hover {
+  background-color: $twitter-hover;
+}
+
+.google-circle:hover {
+  background-color: $google-hover;
+}
