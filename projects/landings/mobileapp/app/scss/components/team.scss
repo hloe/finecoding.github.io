@@ -1,9 +1,19 @@
 @import "../core/_core.scss";
 .team {
   padding-top: 87px;
-  padding-bottom: 71px;
+  padding-bottom: 79px;
   text-align: center;
-  &__subtitle {}
-  &__content {}
-  &__item {}
+  &__subtitle {
+    @include opensans-semibold;
+    color: $team-text;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 36px auto 0;
+    max-width: 970px;
+    opacity: .8;
+  }
+  &__content {
+    position: relative;
+    top: 105px;
+  }
 }
