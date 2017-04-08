@@ -18,3 +18,8 @@
 .google-circle:hover {
   background-color: $google-hover;
 }
+
+input:focus,
+textarea:focus {
+  outline-width: 0;
+}

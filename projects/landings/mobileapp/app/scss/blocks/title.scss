@@ -1,11 +1,9 @@
 @import "../core/_core.scss";
 .title_green {
   color: $logo-color;
-  //  line-height: 1.286;
-  line-height: 1.32;
   text-align: center;
   &:after {
-    @include retina('../images/title_line_dark.png', 3, 160px 18px, top center no-repeat);
+    @include retina('../images/title_line_dark.png', 2, 160px 18px, top center no-repeat);
     content: '';
     display: block;
     height: 18px;
@@ -18,5 +16,18 @@
   color: $gray-title;
   @media (min-width: 768px) {
     line-height: .643;
+  }
+}
+
+.title_white {
+  color: $white;
+  text-align: center;
+  &:after {
+    @include retina('../images/title_line_white.png', 2, 160px 18px, top center no-repeat);
+    content: '';
+    display: block;
+    height: 18px;
+    margin: 0 auto;
+    width: 160px;
   }
 }

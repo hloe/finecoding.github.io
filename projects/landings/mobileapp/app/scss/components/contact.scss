@@ -1,4 +1,106 @@
 @import "../core/_core.scss";
+.contact {
+  padding-top: 60px;
+  padding-bottom: 55px;
+  text-align: center;
+  &__title {
+    margin-bottom: 96px;
+  }
+  &__subtitle {
+    @include raleway-regular;
+    color: $white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
+  &__content {
+    @include clearfix;
+  }
+  &__text {
+    @include opensans-regular;
+    color: $footer-gray;
+    color: $white;
+    opacity: .5;
+    font-size: .875rem;
+    line-height: 1.5;
+    margin-bottom: 38px;
+    @media (min-width: 992px) {
+      max-width: 450px;
+      text-align: left;
+    }
+  }
+  &__icons {
+    margin: 0 auto 23px;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__data {
+    @include opensans-regular;
+    color: $contact-data;
+    font-size: .875rem;
+    line-height: 1.75;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.form {
+  @media (min-width: 640px) {
+    &__list {
+      @include clearfix;
+      float: right;
+      right: 0;
+      font-size: 0;
+      line-height: 0;
+      letter-spacing: -1px;
+    }
+  }
+  &__item {
+    letter-spacing: normal;
+    margin: 0 auto 31px;
+    @media (min-width: 640px) {
+      float: right;
+      right: 0;
+      &:first-of-type {
+        float: left;
+        left: 0;
+      }
+      &:nth-of-type(3) {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .footer {
+  @include opensans-regular;
   border-top: 1px solid $footer-border;
+  font-size: .875rem;
+  line-height: 1.5;
+  padding-top: 37px;
+  padding-bottom: 20px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+  &__text {
+    color: $footer-gray;
+    color: $white;
+    opacity: .5;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__link {
+    color: $footer-gray;
+    color: $white;
+    opacity: .5;
+  }
 }
