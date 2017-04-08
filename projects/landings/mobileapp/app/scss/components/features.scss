@@ -1,5 +1,6 @@
 @import "../core/_core.scss";
 .features {
+  padding-bottom: 114px;
   padding-top: 121px;
   color: $gray-text;
   z-index: 6;
@@ -7,13 +8,20 @@
     @include opensans-regular;
     font-size: 1.125rem;
     line-height: 2;
-    margin-top: 56px;
+    margin: 56px auto 0;
+    max-width: 895px;
     text-align: center;
   }
   &__content {
     margin-top: 76px;
-    &__item_text {
-      padding-top: 79px;
+    &__item {
+      &_text {
+              @include clearfix;
+
+        @media (min-width: 768px) {
+          margin-top: 70px;
+        }
+      }
     }
   }
 }

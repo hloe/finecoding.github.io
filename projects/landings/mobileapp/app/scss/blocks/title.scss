@@ -1,7 +1,8 @@
 @import "../core/_core.scss";
 .title_green {
   color: $logo-color;
-  line-height: 1.286;
+  //  line-height: 1.286;
+  line-height: 1.32;
   text-align: center;
   &:after {
     @include retina('../images/title_line_dark.png', 3, 160px 18px, top center no-repeat);

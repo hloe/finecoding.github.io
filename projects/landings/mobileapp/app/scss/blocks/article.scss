@@ -1,32 +1,63 @@
-@import "../core/_core.scss";
-.features-article {
-  @include clearfix;
-  display: flex;
-  padding-left: 80px;
-  width: 325px;
-  &__icon {}
-  &__body {
-    float: right;
-    flex-grow: 1;
-    margin-bottom: 105px;
-  }
-  &__title {
-    margin-bottom: 12px;
-    vertical-align: middle;
-  }
-  &__text {
-    @include opensans-regular;
-    font-size: .813rem;
-    line-height: 1.846;
-    vertical-align: middle;
-    width: 250px;
-    white-space: pre-wrap;
-  }
-  &__img {
+  @import "../core/_core.scss";
+  svg,
+  use {
     display: block;
-    height: 726px;
-    margin: 0 auto;
-    width: 418px;
   }
-}
-
+  
+  .features-article {
+    @include clearfix;
+    margin: 0 auto 50px;
+    padding-left: 13px;
+    text-align: center;
+    @media (min-width: 768px) {
+      display: flex;
+      margin: 0 auto 100px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    &__icon {
+      display: block;
+      margin: 0 auto 10px;
+      vertical-align: top;
+      @media (min-width: 768px) {
+        float: left;
+        margin-bottom: 0;
+        margin-right: 41px;
+      }
+    }
+    &__body {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      flex-grow: 1;
+      padding-top: 5px;
+      @media (min-width: 768px) {
+        float: left;
+        text-align: left;
+      }
+    }
+    &__title {
+      @include raleway-bold;
+      color: $gray-text;
+      font-size: 1.125rem;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    &__text {
+      @include opensans-regular;
+      font-size: .813rem;
+      line-height: 1.9;
+      vertical-align: middle;
+      white-space: pre-wrap;
+      @media (min-width: 768px) {
+        max-width: 245px;
+      }
+    }
+    &__img {
+      height: auto;
+      //      width: 418px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
