@@ -4,12 +4,13 @@
 
       <div class="row">
         <div class="col-xs-12 col-lg-12">
-          <h2 class="contact__title">contact us</h2>
+          <h2 class="contact__title title_white">contact us</h2>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <p class="contact__subtitle">get in touch with us</p>
-          <p class="contact__text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
-          <address class="contact-address">
+        <div class="contact__content">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+            <h3 class="contact__subtitle">Get in touch with us</h3>
+            <p class="contact__text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
+            <address class="contact-address">
                <div class="contact__icons">
                 <a href="">
                   <div class="facebook-circle">
@@ -34,28 +35,29 @@
                 </a>
               </div>           
            
-            <p class="contact-address__item">+XX-XXXX - XXXX - XX</p>
-            <p class="contact-address__item">Businessname@gmail.com</p>
-          </address>
+            <p class="contact__data">+XX-XXXX - XXXX - XX</p>
+            <p class="contact__data">Businessname@gmail.com</p>
+            </address>
+          </div>
 
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <form action="mailto:test@gmail.com" enctype="text/plain" class="form">
-            <ul class="form__list">
-              <li class="form__item">
-                <input type="text" placeholder="name">
-              </li>
-              <li class="form__item">
-                <input type="email" placeholder="email">
-              </li>
-              <li class="form__item">
-                <textarea name="message text" cols="30" rows="10" placeholder="message"></textarea>
-              </li>
-              <li class="form__item">
-                <input type="submit" value="submit">
-              </li>
-            </ul>
-          </form>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+            <form action="mailto:test@gmail.com" enctype="text/plain" class="form">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input type="text" placeholder="name" pattern="^[a-zA-Z\s]+$" name="name" required autofocus>
+                </li>
+                <li class="form__item">
+                  <input type="email" placeholder="email" name="email" required>
+                </li>
+                <li class="form__item">
+                  <textarea name="message text" cols="30" rows="10" placeholder="message" name="message" required></textarea>
+                </li>
+                <li class="form__item">
+                  <input type="submit" value="submit">
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -66,10 +68,10 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <p class="contact-footer__text">&copy;2003-2015 Business Name, All Rights Reserved</p>
+          <p class="footer__text">&copy;2003-2015 Business Name, All Rights Reserved</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <a href="" class="contact-footer__link">Designed by Colorpixels.net</a>
+          <a href="" class="footer__link">Designed by Colorpixels.net</a>
         </div>
       </div>
     </div>
