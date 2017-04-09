@@ -13,9 +13,9 @@
   }
   &__text {
     @include opensans-semibold;
-    color: $team-text;
     font-size: 1rem;
     line-height: 1.5;
+    color: $team-text;
     opacity: .8;
   }
 }
@@ -33,20 +33,24 @@
   }
   &__title {
     @include opensans-semibold;
-    color: $team-text;
     line-height: 1.333;
     margin-bottom: 5px;
     margin-top: 11px;
     font-size: 1.125rem;
+    &__link {
+      color: $team-text;
+    }
   }
   &__text {
     @include opensans-regular;
-    color: $alternative-gray;
-    color: $team-text;
     font-size: .813rem;
     line-height: 1.846;
     margin-bottom: 50px;
-    opacity: .56;
+    &__link {
+      color: $alternative-gray;
+            color: $team-text;
+      opacity: .56;
+    }
     @media (min-width: 768px) {
       margin-bottom: 0;
     }
@@ -54,7 +58,7 @@
 }
 
 .hover {
-   display: none;
+  //   display: none;
   background-color: $aqua-background;
   background-color: $aqua-background-transparent;
   color: $white;

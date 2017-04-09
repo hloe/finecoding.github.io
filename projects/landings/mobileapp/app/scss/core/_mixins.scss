@@ -49,3 +49,10 @@ font-family: 'Helvetica Neue';
 font-weight: bold;
 font-style: italic;
 }
+
+@mixin transition {
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}

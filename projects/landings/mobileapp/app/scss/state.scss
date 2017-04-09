@@ -1,4 +1,8 @@
 @import "core/_core.scss";
+* {
+  @include transition;
+}
+
 .button__download:hover {
   background-color: $button-hover;
 }
@@ -24,3 +28,23 @@ textarea:focus {
   outline-width: 0;
 }
 
+input[type="submit"]:hover {
+  background-color: $submit-hover;
+}
+
+.logo:hover {
+  color: $logo-color-hover;
+}
+
+.menu__link:hover,
+.menu__link:active {
+  color: $nav-link-hover;
+}
+
+.figure__title__link:hover {
+  color: $team-text-hover;
+}
+
+.footer__link:hover {
+  color: $footer-hover;
+}

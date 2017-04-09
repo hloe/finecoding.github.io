@@ -2,5 +2,6 @@
 .logo {
   @include raleway-semibold;
   color: $logo-color;
+  display: inline-block;
   font-size: 1.875rem;
 }

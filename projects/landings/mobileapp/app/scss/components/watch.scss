@@ -2,7 +2,7 @@
 .watch {
   @include clearfix;
   &__content {
-    padding-top: 72px;
+    padding-top: 77px;
     padding-bottom: 66px;
   }
   &__title {
@@ -22,6 +22,7 @@
   &__icons {
     margin-top: 23px;
     margin-left: 3px;
+    margin-bottom: 50px;
   }
   &__iframe-container {
     position: relative;
