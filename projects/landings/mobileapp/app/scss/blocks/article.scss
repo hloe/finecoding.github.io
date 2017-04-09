@@ -56,8 +56,30 @@
     }
     &__img {
       height: auto;
-      //      width: 418px;
       width: 100%;
       margin: 0 auto;
+    }
+  }
+  
+  .say-article {
+    &__img {
+      height: 100px;
+      width: 100px;
+    }
+    &__author {
+      @include opensans-semibold;
+      color: $team-text;
+      font-size: 1.125rem;
+      line-height: 1.5;
+      margin-top: 20px;
+    }
+    &__from {
+      @include opensans-regular;
+      color: $company;
+      font-size: .813rem;
+      line-height: 1;
+    }
+    &__quote {
+      margin-top: 101px;
     }
   }

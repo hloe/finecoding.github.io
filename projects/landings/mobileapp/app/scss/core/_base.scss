@@ -39,11 +39,14 @@ blockquote {
   font-size: 1.125rem;
   line-height: 2;
   padding: 0 65px;
-  text-align: justify;
-  text-align-last: center;
   margin: 0 auto;
-  max-width: 938px;
+  max-width: 1080px;
+  text-align: left;
   position: relative;
+  @media (min-width: 480px) {
+    text-align: justify;
+    text-align-last: center;
+  }
 }
 
 blockquote:before {
@@ -77,26 +80,22 @@ form {
 
 ::-webkit-input-placeholder {
   color: $placeholder;
-    text-transform: capitalize;
-
+  text-transform: capitalize;
 }
 
 ::-moz-placeholder {
   color: $placeholder;
-    text-transform: capitalize;
-
+  text-transform: capitalize;
 }
 
 :-moz-placeholder {
   color: $placeholder;
-    text-transform: capitalize;
-
+  text-transform: capitalize;
 }
 
 :-ms-input-placeholder {
   color: $placeholder;
-    text-transform: capitalize;
-
+  text-transform: capitalize;
 }
 
 input,

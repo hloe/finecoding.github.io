@@ -1,4 +1,8 @@
 @import "../core/_core.scss";
 .say {
   padding-top: 79px;
+  padding-bottom: 120px;
+  &__content {
+    margin-top: 15px;
+  }
 }
