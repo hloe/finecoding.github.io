@@ -13,17 +13,15 @@ var rigger = require('gulp-rigger');
 
 var svgSprite = require("gulp-svg-sprites");
 gulp.task('sprites', function () {
-    return gulp.src('app/i/*.svg')
-        .pipe(svgSprite())
-        .pipe(gulp.dest('app/i'));
+  return gulp.src('app/i/*.svg')
+    .pipe(svgSprite())
+    .pipe(gulp.dest('app/i'));
 });
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
-    // concatenation
     .pipe(concat('styles.css'))
-    // minification
     .pipe(minify())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -52,7 +50,6 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('app/js/**/*.js')
-    // minification
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
 });

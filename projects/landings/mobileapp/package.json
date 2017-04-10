@@ -28,6 +28,7 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "imagemin-pngquant": "^5.0.0"
   }
 }

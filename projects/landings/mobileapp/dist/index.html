@@ -5,15 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobileapp</title>
+
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">-->
   <link rel="stylesheet" href="css/styles.css">
+  
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="js/retina.min.js"></script>
+  <script src="js/wow.min.js"></script>
 
 </head>
 
+
+
 <body>
 
-
-  
 <div class="wrapper wrapper__header">
 
   <header class="header" id="home">
@@ -48,7 +53,7 @@
     <div class="header__content">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 wow fadeInLeft">
 
             <h1 class="header__title">introducing mobileapp.</h1>
             <p class="header__subtitle">Maecenas vitae tellus sapien. Praesent</p>
@@ -74,13 +79,13 @@
             </ul>
             <button class="button button__download header__button">
               <svg class="icon icon-download">
-                <use xlink:href="./i/sprite_header.svg#cloud-download"></use>
+                <use xlink:href="../i/sprite_header.svg#cloud-download"></use>
               </svg>
               <span class="button__download__text">Download</span>
             </button>
           </div>
 
-          <div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
+          <div class="hidden-xs col-sm-6 col-md-6 col-lg-6 wow fadeInRight">
             <img src="images/phones.png" alt="mobile phones" class="header__img">
           </div>
 
@@ -94,16 +99,16 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wow fadeInUp">
         <h2 class="features__title title_green">key features</h2>
         <p class="features__subtitle">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
       </div>
     </div>
 
-    <div class="features__content">
+    <div class="features__content wow fadeInUp">
       <div class="row">
 
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInLeft">
           <div class="features__content__item features__content__item_text">
             <article class="features-article">
               <svg class="icon icon-face features-article__icon">
@@ -135,13 +140,13 @@
           </div>
         </div>
 
-        <div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+        <div class="hidden-xs hidden-sm col-md-4 col-lg-4 wow fadeInUp">
           <div class="features__content__item">
             <img src="images/screen.png" alt="smartphone" class="features-article__img">
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInRight">
           <div class="features__content__item features__content__item_text">
             <div class="features__content__item_text">
               <article class="features-article">
@@ -185,7 +190,7 @@
     <section class="watch">
       <div class="watch__content">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 wow fadeInLeft">
             <h2 class="watch__title title_gray">watch the video</h2>
             <p class="watch__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
 
@@ -206,10 +211,9 @@
                 </svg>
               </div>
             </div>
-
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 wow fadeInRight">
             <div class="watch__iframe-container">
               <img class="watch__ratio" src="images/text.png" />
               <iframe class="watch__iframe" src="https://player.vimeo.com/video/90855524?title=0&byline=0&portrait=0" name="Mobile App Video" allowfullscreen>
@@ -222,17 +226,18 @@
   </div>
 </div>
 
-<section class="team" id="team">
+<section class="team wow fadeInUp" id="team">
+  <script src="js/user-card.js"></script>
   <div class="container">
 
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wow fadeInUp">
         <h2 class="team__title title_green">our team</h2>
         <p class="team__subtitle">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
       </div>
 
       <div class="team__content">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 wow fadeInLeft">
           <div class="user-card">
             <figure class="figure">
               <p><img src="images/photo1.jpg" alt="Managing Director photo" class="figure__img"></p>
@@ -271,7 +276,7 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 wow fadeInLeft">
           <div class="user-card">
             <figure class="figure">
               <p><img src="images/photo2.jpg" alt="Lead Designer photo" class="figure__img"></p>
@@ -312,7 +317,7 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 wow fadeInRight">
           <div class="user-card">
             <figure class="figure">
               <p><img src="images/photo3.jpg" alt="Lead Developer photo" class="figure__img"></p>
@@ -352,7 +357,7 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 wow fadeInRight">
           <div class="user-card">
             <figure class="figure">
               <p><img src="images/photo4.jpg" alt="Sr. UI Designer photo" class="figure__img"></p>
@@ -397,11 +402,13 @@
   </div>
 </section>
 
-<section class="say" id="testimonials">
+<section class="say wow fadeInUp" id="testimonials">
+  <script src="js/carousel.min.js"></script>
+
   <div class="container">
 
     <div class="row">
-      <div class="col-xs-12 col-lg-12">
+      <div class="col-xs-12 col-lg-12 wow fadeInUp">
         <h2 class="say__title title_green">What our customer’s say</h2>
         <div class="say__content">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -471,15 +478,15 @@
 </section>
 
 <div class="wrapper wrapper__contact">
-  <section class="contact" id="contact">
+  <section class="contact wow fadeInUp" id="contact">
     <div class="container">
 
       <div class="row">
         <div class="col-xs-12 col-lg-12">
-          <h2 class="contact__title title_white">contact us</h2>
+          <h2 class="contact__title title_white wow fadeInUp">contact us</h2>
         </div>
         <div class="contact__content">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 wow fadeInLeft">
             <h3 class="contact__subtitle">Get in touch with us</h3>
             <p class="contact__text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
             <address class="contact-address">
@@ -512,11 +519,11 @@
             </address>
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 wow fadeInRight">
             <form action="mailto:test@gmail.com" enctype="text/plain" class="form">
               <ul class="form__list">
                 <li class="form__item">
-                  <input type="text" placeholder="name" pattern="^[a-zA-Z\s]+$" name="name" required autofocus>
+                  <input type="text" placeholder="name" pattern="^[a-zA-Z\s]+$" name="name" required>
                 </li>
                 <li class="form__item">
                   <input type="email" placeholder="email" name="email" required>
@@ -539,10 +546,10 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 wow fadeInLeft">
           <p class="footer__text">&copy;2003-2015 Business Name, All Rights Reserved</p>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 wow fadeInRight">
           <a href="" class="footer__link">Designed by Colorpixels.net</a>
         </div>
       </div>
@@ -550,9 +557,6 @@
   </footer>
 </div>
 
-
-  <script src="js/carousel.min.js"></script>
-  <script src="js/retina.min.js"></script>
 </body>
 
 </html>
