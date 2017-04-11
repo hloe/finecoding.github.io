@@ -4,6 +4,7 @@
 }
 
 .user-card {
+  position: relative;
   z-index: 3;
   width: 270px;
   display: block;
@@ -21,12 +22,8 @@
 }
 
 .figure {
-  position: relative;
   display: block;
   margin: 0 auto;
-  @media (min-width: 768px) {
-    margin: 0 auto 79px;
-  }
   &__img {
     width: 270px;
     height: 300px;
@@ -37,20 +34,16 @@
     @include opensans-semibold;
     font-size: 1.125rem;
     line-height: 1.333;
-    &__link {
-      color: $team-text;
-    }
+    color: $team-text;
   }
   &__text {
     margin-bottom: 50px;
     @include opensans-regular;
     font-size: .813rem;
     line-height: 1.846;
-    &__link {
-      color: $alternative-gray;
-      color: $team-text;
-      opacity: .56;
-    }
+    color: $alternative-gray;
+    color: $team-text;
+    opacity: .56;
     @media (min-width: 768px) {
       margin-bottom: 0;
     }
@@ -61,26 +54,26 @@
   position: absolute;
   z-index: 4;
   top: 0;
-  display: none;
+  left: 0;
   height: 300px;
-  width: 270px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
   padding: 18px 23px 0;
   background-color: $aqua-background;
   background-color: $aqua-background-transparent;
   font-size: 1rem;
   line-height: 1.5;
   color: $white;
-
   &__title {
     margin-bottom: 8px;
-
     @include opensans-semibold;
     font-size: 1rem;
     line-height: 1.5;
   }
   &__text {
     margin-bottom: 105px;
-
     @include opensans-regular;
     font-size: 1rem;
     line-height: 1.5;
@@ -88,11 +81,9 @@
   }
   &__icons {
     position: absolute;
-
     left: 0;
     right: 0;
     bottom: 10px;
-
     margin: 0 auto;
     @media (min-width: 320px) {
       bottom: 22px;

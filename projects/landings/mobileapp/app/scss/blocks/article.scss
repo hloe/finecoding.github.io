@@ -10,7 +10,6 @@
     padding-left: 13px;
     text-align: center;
     @media (min-width: 768px) {
-      display: flex;
       margin: 0 auto 100px;
       &:last-of-type {
         margin-bottom: 0;
@@ -27,10 +26,8 @@
       }
     }
     &__body {
-      display: block;
       margin: 0 auto;
       padding-top: 5px;
-      flex-grow: 1;
       text-align: center;
       @media (min-width: 768px) {
         float: left;
@@ -43,7 +40,6 @@
       font-size: 1.125rem;
       line-height: 1;
       color: $gray-text;
-
     }
     &__text {
       @include opensans-regular;
@@ -55,11 +51,6 @@
         max-width: 245px;
       }
     }
-    &__img {
-      height: auto;
-      width: 100%;
-      margin: 0 auto;
-    }
   }
   
   .say-article {
@@ -69,12 +60,10 @@
     }
     &__author {
       margin-top: 20px;
-
       @include opensans-semibold;
       font-size: 1.125rem;
       line-height: 1.5;
       color: $team-text;
-
     }
     &__from {
       @include opensans-regular;

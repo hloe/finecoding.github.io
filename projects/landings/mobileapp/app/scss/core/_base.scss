@@ -5,6 +5,7 @@ html {
   overflow-x: hidden;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -25,7 +26,6 @@ h2 {
 button {
   border-radius: 3px;
   @include opensans-semibold;
-
   font-size: 1.25rem;
   text-transform: capitalize;
 }
@@ -40,8 +40,7 @@ blockquote {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 65px;
-    @include opensans-regular;
-
+  @include opensans-regular;
   font-size: 1.125rem;
   line-height: 2;
   text-align: left;
@@ -123,7 +122,6 @@ textarea {
   background-color: $white;
   border-radius: 3px;
   @include opensans-regular;
-
   font-size: 1rem;
   color: $input;
 }
