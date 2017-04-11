@@ -8,9 +8,9 @@
   }
   &__subtitle {
     @include raleway-regular;
-    color: $white;
     font-size: 1.5rem;
     line-height: 1.5;
+    color: $white;
     @media (min-width: 992px) {
       text-align: left;
     }
@@ -19,13 +19,13 @@
     @include clearfix;
   }
   &__text {
+    margin-bottom: 38px;
     @include opensans-regular;
+    font-size: .875rem;
+    line-height: 1.5;
     color: $footer-gray;
     color: $white;
     opacity: .5;
-    font-size: .875rem;
-    line-height: 1.5;
-    margin-bottom: 38px;
     @media (min-width: 992px) {
       max-width: 450px;
       text-align: left;
@@ -39,9 +39,9 @@
   }
   &__data {
     @include opensans-regular;
-    color: $contact-data;
     font-size: .875rem;
     line-height: 1.75;
+    color: $contact-data;
     &:last-of-type {
       margin-bottom: 50px;
     }
@@ -63,8 +63,9 @@
     }
   }
   &__item {
-    letter-spacing: normal;
     margin: 0 auto 31px;
+    letter-spacing: normal;
+
     @media (min-width: 640px) {
       float: right;
       right: 0;
@@ -80,12 +81,14 @@
 }
 
 .footer {
-  @include opensans-regular;
-  border-top: 1px solid $footer-border;
-  font-size: .875rem;
-  line-height: 1.5;
   padding-top: 37px;
   padding-bottom: 20px;
+
+  border-top: 1px solid $footer-border;
+  @include opensans-regular;
+
+  font-size: .875rem;
+  line-height: 1.5;
   text-align: center;
   @media (min-width: 768px) {
     text-align: right;

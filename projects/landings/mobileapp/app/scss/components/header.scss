@@ -1,8 +1,8 @@
 @import "../core/_core.scss";
 .header {
-  color: $white;
   margin-bottom: 0;
   padding-top: 29px;
+  color: $white;
   text-align: center;
   @media (min-width: 992px) {
     height: 573px;
@@ -21,8 +21,8 @@
     }
   }
   &__title {
-    line-height: .857;
     margin-top: 50px;
+    line-height: .857;
     text-align: center;
     @media (min-width: 768px) {
       margin-top: 66px;
@@ -43,8 +43,8 @@
   &__list {
     margin-top: 32px;
     @media (min-width: 480px) and (max-width: 767px) {
-      margin: 32px auto 0;
       width: 380px;
+      margin: 32px auto 0;
     }
   }
   &__item {
@@ -66,10 +66,11 @@
     }
   }
   &__img {
-    height: auto;
-    width: 100%;
     position: relative;
     float: right;
+
+    height: auto;
+    width: 100%;
     @media (min-width: 992px) and (max-width: 1099px) {
       width: 339px;
     }

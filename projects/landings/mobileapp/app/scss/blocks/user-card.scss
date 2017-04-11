@@ -4,10 +4,10 @@
 }
 
 .user-card {
-  display: block;
-  margin: 0 auto;
   z-index: 3;
   width: 270px;
+  display: block;
+  margin: 0 auto;
   &__title {
     margin-bottom: 36px;
   }
@@ -21,31 +21,31 @@
 }
 
 .figure {
+  position: relative;
   display: block;
   margin: 0 auto;
-  position: relative;
   @media (min-width: 768px) {
     margin: 0 auto 79px;
   }
   &__img {
-    height: 300px;
     width: 270px;
+    height: 300px;
   }
   &__title {
-    @include opensans-semibold;
-    line-height: 1.333;
     margin-bottom: 5px;
     margin-top: 11px;
+    @include opensans-semibold;
     font-size: 1.125rem;
+    line-height: 1.333;
     &__link {
       color: $team-text;
     }
   }
   &__text {
+    margin-bottom: 50px;
     @include opensans-regular;
     font-size: .813rem;
     line-height: 1.846;
-    margin-bottom: 50px;
     &__link {
       color: $alternative-gray;
       color: $team-text;
@@ -58,37 +58,42 @@
 }
 
 .hover {
-    display: none;
-  background-color: $aqua-background;
-  background-color: $aqua-background-transparent;
-  color: $white;
-  font-size: 1rem;
-  line-height: 1.5;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  display: none;
   height: 300px;
   width: 270px;
   padding: 18px 23px 0;
-  position: absolute;
-  top: 0;
-  z-index: 4;
+  background-color: $aqua-background;
+  background-color: $aqua-background-transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $white;
+
   &__title {
+    margin-bottom: 8px;
+
     @include opensans-semibold;
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 8px;
   }
   &__text {
+    margin-bottom: 105px;
+
     @include opensans-regular;
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 105px;
     opacity: .8;
   }
   &__icons {
+    position: absolute;
+
     left: 0;
     right: 0;
-    margin: 0 auto;
     bottom: 10px;
-    position: absolute;
+
+    margin: 0 auto;
     @media (min-width: 320px) {
       bottom: 22px;
     }

@@ -23,8 +23,9 @@ h2 {
 }
 
 button {
-  @include opensans-semibold;
   border-radius: 3px;
+  @include opensans-semibold;
+
   font-size: 1.25rem;
   text-transform: capitalize;
 }
@@ -34,15 +35,16 @@ iframe {
 }
 
 blockquote {
-  @include opensans-regular;
+  position: relative;
   display: block;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 65px;
+    @include opensans-regular;
+
   font-size: 1.125rem;
   line-height: 2;
-  padding: 0 65px;
-  margin: 0 auto;
-  max-width: 1080px;
   text-align: left;
-  position: relative;
   @media (min-width: 480px) {
     text-align: justify;
     text-align-last: center;
@@ -50,31 +52,31 @@ blockquote {
 }
 
 blockquote:before {
-  color: $quotes;
-  content: '\201c';
+  position: absolute;
+  top: 30px;
+  left: 0;
   font-family: Georgia, serif;
   font-size: 9.375rem;
   line-height: .24;
-  left: 0;
-  position: absolute;
-  top: 30px;
+  color: $quotes;
+  content: '\201c';
 }
 
 blockquote:after {
+  position: absolute;
+  right: 0;
   bottom: -30px;
-  color: $quotes;
-  content: '\201d';
   font-family: Georgia, serif;
   font-size: 9.375rem;
   line-height: .24;
-  right: 0;
-  position: absolute;
+  color: $quotes;
+  content: '\201d';
 }
 
 form {
   @media (min-width: 640px) {
-    margin: 0 auto;
     width: 570px;
+    margin: 0 auto;
   }
 }
 
@@ -107,8 +109,8 @@ input[type="text"],
 input[type="email"] {
   width: 100%;
   height: 44px;
-  line-height: 44px;
   padding-left: 20px;
+  line-height: 44px;
   vertical-align: middle;
   @media (min-width: 640px) {
     width: 270px;
@@ -118,28 +120,29 @@ input[type="email"] {
 input[type="text"],
 input[type="email"],
 textarea {
-  @include opensans-regular;
   background-color: $white;
   border-radius: 3px;
-  color: $input;
+  @include opensans-regular;
+
   font-size: 1rem;
+  color: $input;
 }
 
 textarea {
-  padding: 20px;
-  height: 179px;
   width: 100%;
+  height: 179px;
+  padding: 20px;
 }
 
 input[type="submit"] {
-  @include opensans-regular;
-  background-color: $video-background;
+  width: 170px;
+  height: 50px;
   border-radius: 3px;
-  color: $white;
+  background-color: $video-background;
+  @include opensans-regular;
   font-size: 1.375rem;
   line-height: 50px;
   vertical-align: middle;
   text-transform: uppercase;
-  height: 50px;
-  width: 170px;
+  color: $white;
 }

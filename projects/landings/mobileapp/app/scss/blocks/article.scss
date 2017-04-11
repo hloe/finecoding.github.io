@@ -29,20 +29,21 @@
     &__body {
       display: block;
       margin: 0 auto;
-      text-align: center;
-      flex-grow: 1;
       padding-top: 5px;
+      flex-grow: 1;
+      text-align: center;
       @media (min-width: 768px) {
         float: left;
         text-align: left;
       }
     }
     &__title {
+      margin-bottom: 12px;
       @include raleway-bold;
-      color: $gray-text;
       font-size: 1.125rem;
       line-height: 1;
-      margin-bottom: 12px;
+      color: $gray-text;
+
     }
     &__text {
       @include opensans-regular;
@@ -67,11 +68,13 @@
       width: 100px;
     }
     &__author {
+      margin-top: 20px;
+
       @include opensans-semibold;
-      color: $team-text;
       font-size: 1.125rem;
       line-height: 1.5;
-      margin-top: 20px;
+      color: $team-text;
+
     }
     &__from {
       @include opensans-regular;

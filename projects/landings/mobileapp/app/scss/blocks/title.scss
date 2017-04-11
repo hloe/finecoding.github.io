@@ -1,14 +1,17 @@
 @import "../core/_core.scss";
 .title_green {
-  color: $logo-color;
   text-align: center;
+  color: $logo-color;
+
   &:after {
     @include retina('../images/title_line_dark.png', 2, 160px 18px, top center no-repeat);
-    content: '';
     display: block;
+    width: 160px;
+
     height: 18px;
     margin: 0 auto;
-    width: 160px;
+    content: '';
+
   }
 }
 
@@ -20,14 +23,17 @@
 }
 
 .title_white {
-  color: $white;
   text-align: center;
+  color: $white;
+
   &:after {
     @include retina('../images/title_line_white.png', 2, 160px 18px, top center no-repeat);
-    content: '';
     display: block;
     height: 18px;
-    margin: 0 auto;
     width: 160px;
+
+    margin: 0 auto;
+
+    content: '';
   }
 }

@@ -4,12 +4,14 @@
   padding-bottom: 79px;
   text-align: center;
   &__subtitle {
+    max-width: 970px;
+    margin: 36px auto 0;
+
     @include opensans-semibold;
-    color: $team-text;
     font-size: 1rem;
     line-height: 1.5;
-    margin: 36px auto 0;
-    max-width: 970px;
+    color: $team-text;
+
     opacity: .8;
   }
   &__content {
