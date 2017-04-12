@@ -1,5 +1,4 @@
 @import "core/_core.scss";
-
 .button__download:hover {
   @include transition;
   background-color: $button-hover;
@@ -39,8 +38,7 @@ input[type="submit"]:hover {
   color: $logo-color-hover;
 }
 
-.menu__link:hover,
-.menu__link:active {
+.menu__link:hover {
   @include transition;
   color: $nav-link-hover;
 }

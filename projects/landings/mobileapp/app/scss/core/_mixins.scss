@@ -9,43 +9,43 @@ visibility: hidden;
 }
 
 @mixin raleway-regular {
-font-family: 'Raleway';
+font-family: 'Raleway', Arial, sans-serif;
 font-weight: normal;
 font-style: normal;
 }
 
 @mixin raleway-bold {
-font-family: 'Raleway';
+font-family: 'Raleway', Arial, sans-serif;
 font-weight: bold;
 font-style: normal;
 }
 
 @mixin raleway-semibold {
-font-family: 'Raleway';
+font-family: 'Raleway', Arial, sans-serif;
 font-weight: 600;
 font-style: normal;
 }
 
 @mixin opensans-regular {
-font-family: 'Open Sans';
+font-family: 'Open Sans', Arial, sans-serif;
 font-weight: normal;
 font-style: normal;
 }
 
 @mixin opensans-bold {
-font-family: 'Open Sans';
+font-family: 'Open Sans', Arial, sans-serif;
 font-weight: bold;
 font-style: normal;
 }
 
 @mixin opensans-semibold {
-font-family: 'Open Sans';
+font-family: 'Open Sans', Arial, sans-serif;
 font-weight: 600;
 font-style: normal;
 }
 
 @mixin helvetica {
-font-family: 'Helvetica Neue';
+font-family: 'Helvetica Neue', Arial, sans-serif;
 font-weight: bold;
 font-style: italic;
 }
