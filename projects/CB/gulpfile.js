@@ -1,4 +1,5 @@
 'use strict';
+'use strict';
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -12,14 +13,11 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var rigger = require('gulp-rigger');
-//var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
-    // concatenation
-    .pipe(concat('styles.css'))
-    // minification
+    .pipe(concat('styles.min.css'))
     .pipe(minify())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -48,7 +46,6 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('app/js/**/*.js')
-    // minification
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
 });
@@ -56,11 +53,6 @@ gulp.task('scripts', function () {
 gulp.task('fonts', function () {
   return gulp.src('app/fonts/*')
     .pipe(gulp.dest('dist/fonts'))
-});
-
-gulp.task('icons', function () {
-  return gulp.src('app/i/*')
-    .pipe(gulp.dest('dist/i'))
 });
 
 gulp.task('images', function () {
@@ -97,7 +89,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'scripts', 'images', 'fonts', 'icons'],
+  runSequence('clean:dist', ['sass', 'scripts', 'images', 'fonts'],
     callback
   )
 });
