@@ -1,0 +1,38 @@
+@import "../core/_core.scss";
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  &__centered {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.small-menu {
+  border-bottom: 1px solid $menu-line;
+  &__list {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -1px;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 34px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav {
+  &__list {}
+  &__item {
+    display: inline-block;
+    margin-right: 55px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../core/_core.scss";
+.link {
+  @include lato-bold;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $light-grey;
+  color: $light-grey-transparent;
+  &__small {
+    font-size: .688rem;
+    letter-spacing: .063rem;
+  }
+  &__medium {
+    padding-bottom: 5px;
+    font-size: .75rem;
+        letter-spacing: .063rem;
+
+    vertical-align: top;
+  }
+  &__active {
+    color: $active;
+    border-bottom: 2px solid $active-border;
+  }
+  &__special {
+    color: $special;
+  }
+}

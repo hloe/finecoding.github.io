@@ -1,11 +1,11 @@
 @mixin clearfix {
-&:after {
-clear: both;
-content: '.';
-display: block;
-height: 0;
-visibility: hidden;
-} 
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
 }
 
 @mixin didot-bold {
@@ -22,7 +22,7 @@ visibility: hidden;
 
 @mixin lato-bold {
   font-family: 'Lato Bold', Arial, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 

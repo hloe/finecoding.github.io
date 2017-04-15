@@ -1,0 +1,36 @@
+@import "../core/_core.scss";
+
+.products {
+  width: 1140px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  &__list {
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -1px;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 29px;
+    width: 263px;
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  &__item {
+    display: inline-block;
+  }
+}
