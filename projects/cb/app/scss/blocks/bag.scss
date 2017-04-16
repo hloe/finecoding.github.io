@@ -1,0 +1,16 @@
+@import "../core/_core.scss";
+.bag-amount {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid $bag-amount;
+  border-radius: 50%;
+  @include lato-bold;
+  font-size: .75rem;
+  line-height: 48px;
+  letter-spacing: normal;
+  color: $active;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}

@@ -9,13 +9,19 @@
   &__small {
     font-size: .688rem;
     letter-spacing: .063rem;
+    &:hover {
+      color: $active;
+    }
   }
   &__medium {
     padding-bottom: 5px;
     font-size: .75rem;
-        letter-spacing: .063rem;
-
+    letter-spacing: .063rem;
     vertical-align: top;
+    &:hover {
+      color: $active;
+      border-bottom: 2px solid $active-border;
+    }
   }
   &__active {
     color: $active;
@@ -23,5 +29,9 @@
   }
   &__special {
     color: $special;
+    &:hover {
+            color: $special;
+      border-bottom: 2px solid $special;
+    }
   }
 }

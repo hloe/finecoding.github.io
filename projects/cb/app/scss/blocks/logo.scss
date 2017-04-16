@@ -1,0 +1,16 @@
+@import "../core/_core.scss";
+.logo {
+  @include didot-bold;
+  font-size: 3.25rem;
+  line-height: 1;
+  color: $active;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  &__and {
+    font-size: 2rem;
+  }
+  &:hover {
+    color: $logo-hover;
+  }
+}

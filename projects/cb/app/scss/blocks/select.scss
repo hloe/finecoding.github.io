@@ -24,12 +24,10 @@
 
 .select {
   display: inline-block;
-  padding-top: 18px;
-  padding-right: 14px;
-  padding-bottom: 18px;
+  padding-right: 7px;
   border-width: 0;
   outline-width: 0;
-  background: $white;
+  background-color: $white;
   @include lato-bold;
   font-size: .688rem;
   line-height: 1;
@@ -43,17 +41,13 @@
 
 .label {
   position: relative;
-
-  padding-top: 18px;
-  padding-bottom: 18px;
   &:after {
     position: absolute;
     display: block;
     width: 10px;
     height: 6px;
-        right: 6px;
-    top: 21px;
-
+    right: 6px;
+    top: 5px;
     content: '';
     @include retina('../images/arrow.png', 2, 7px 4px, top center no-repeat);
     pointer-events: none;
@@ -61,13 +55,10 @@
   &:before {
     position: absolute;
     display: block;
-
     width: 10px;
-
     height: 15px;
-    top: 16px;
+    top: 0;
     right: 6px;
-
     content: '';
     background-color: $white;
     pointer-events: none;
