@@ -2,13 +2,13 @@
 .link {
   @include lato-bold;
   line-height: 1;
-  text-transform: uppercase;
-  text-decoration: none;
+  letter-spacing: .063rem;
   color: $light-grey;
   color: $light-grey-transparent;
+  text-transform: uppercase;
+  text-decoration: none;
   &__small {
     font-size: .688rem;
-    letter-spacing: .063rem;
     &:hover {
       color: $active;
     }
@@ -16,7 +16,6 @@
   &__medium {
     padding-bottom: 5px;
     font-size: .75rem;
-    letter-spacing: .063rem;
     vertical-align: top;
     &:hover {
       color: $active;
@@ -30,8 +29,15 @@
   &__special {
     color: $special;
     &:hover {
-            color: $special;
+      color: $special;
       border-bottom: 2px solid $special;
     }
   }
+  &__footer {
+    font-size: .75rem;
+    color: $active;
+    &:hover {
+      color: $logo-hover;
+    }
+}
 }

@@ -8,10 +8,12 @@
   &__item {
     display: inline-block;
     padding: 0 20px;
+    height: 43px;
     border-right: 1px solid $menu-line;
     font-size: .688rem;
-    line-height: normal;
+    line-height: 43px;
     letter-spacing: normal;
+    vertical-align: middle;
     &:first-of-type {
       padding-left: 0;
     }
@@ -24,7 +26,7 @@
 
 .select {
   display: inline-block;
-  padding-right: 7px;
+  padding-right: 20px;
   border-width: 0;
   outline-width: 0;
   background-color: $white;
@@ -35,8 +37,11 @@
   color: $light-grey;
   color: $light-grey-transparent;
   text-transform: uppercase;
-  appearance: none;
+      -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
   cursor: pointer;
+
 }
 
 .label {
@@ -50,7 +55,7 @@
     top: 5px;
     content: '';
     @include retina('../images/arrow.png', 2, 7px 4px, top center no-repeat);
-    pointer-events: none;
+    pointer-events:none;
   }
   &:before {
     position: absolute;
@@ -60,7 +65,8 @@
     top: 0;
     right: 6px;
     content: '';
-    background-color: $white;
-    pointer-events: none;
+        background-color: $white;
+
+    pointer-events:none;
   }
 }

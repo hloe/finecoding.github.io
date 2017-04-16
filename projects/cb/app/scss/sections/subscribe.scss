@@ -25,4 +25,10 @@
   &__form {
     margin-top: 27px;
   }
+  &__list {
+    @include list;
+  }
+  &__item {
+    display: inline-block;
+  }
 }
