@@ -1,21 +1,26 @@
 @import "../core/_core.scss";
-
 .products {
   width: 1140px;
   margin: 0 auto;
-
+  padding-top: 93px;
+  padding-bottom: 55px;
+  text-align: center;
   &__title {
-    text-align: center;
+    @include playfair;
+    font-size: 3.625rem;
+    line-height: 1;
+    color: $active;
+  }
+  &__menu {
+    margin-top: 60px;
   }
   &__content {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    padding-top: 45px;
   }
   &__list {
-    font-size: 0;
-    line-height: 0;
-    letter-spacing: -1px;
+    @include list;
   }
   &__item {
     display: inline-block;
@@ -25,6 +30,9 @@
       margin-right: 0;
     }
   }
+  &__button {
+    margin-top: 17px;
+  }
 }
 
 .categories {
@@ -32,5 +40,9 @@
   justify-content: center;
   &__item {
     display: inline-block;
+    margin-right: 55px;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

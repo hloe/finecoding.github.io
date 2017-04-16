@@ -12,9 +12,22 @@
 
 <body>
 
+  <section class="subscribe">
+    <div class="container">
+      <h2 class="subscribe__title">subscribe</h2>
+      <p class="subscribe__subtitle">Stay updated on news</p>
+      <form class="subscribe-form subscribe__form" action="#">
+        <input type="email" placeholder="your email address" required>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!--
   <div class="menu">
     <div class="small-menu">
-      <div class="container container__centered">
+      <div class="container container__centered container__small-menu">
         <ul class="small-menu__list">
           <li class="small-menu__item">
             <a href="" class="link link__small">delivery</a>
@@ -26,7 +39,7 @@
             <a href="" class="link link__small">help</a>
           </li>
         </ul>
-
+  
         <form action="#" class="form">
           <ul class="form__list">
             <li class="form__item">
@@ -46,16 +59,16 @@
                   <option value="es">es</option>
                 </select>
               </label>
-
+  
             </li>
           </ul>
         </form>
       </div>
     </div>
-
+  
     <nav class="nav">
       <div class="container container__centered container__main-menu">
-
+  
         <a href="" class="logo">C<span class="logo__and">&</span>B</a>
         <ul class="nav__list">
           <li class="nav__item">
@@ -83,7 +96,7 @@
               <a href="" class="link link__medium">your bag</a>
             </li>
             <li class="right-group__item">
-              <a href="" class="bag__amount">2</a>
+              <a href="" class="bag-amount">2</a>
             </li>
             <li class="right-group__item">
               <a href="">
@@ -95,150 +108,123 @@
       </div>
     </nav>
   </div>
-
-
-
-
-  <!--
-  <div class="menu">
-    <div class="container">
-      <div class="small-menu">
-        <ul class="small-menu__list">
-          <li class="small-menu__item">
-            <a href="">delivery</a>
-          </li>
-          <li class="small-menu__item">
-            <a href="">faq</a>
-          </li>
-          <li class="small-menu__item">
-            <a href="">help</a>
-          </li>
-        </ul>
-  
-        <form action="#">
-          <select name="" id="">
-            <option value="dollars">dollars</option>
-            <option value="euros">euros</option>
-          </select>
-          <select name="" id="">
-            <option value="en">en</option>
-            <option value="de">de</option>
-            <option value="fr">fr</option>
-            <option value="es">es</option>
-          </select>
-        </form>
-      </div>
-  
-      <nav class="nav">
-        <a href="" class="logo">C&B</a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="">home</a></li>
-          <li class="nav__item"><a href="">catalog</a></li>
-          <li class="nav__item"><a href="">news</a></li>
-          <li class="nav__item"><a href="">sale</a></li>
-          <li class="nav__item"><a href="">about</a></li>
-          <li class="nav__item"><a href="">contact</a></li>
-        </ul>
-        <div>
-          <a href="">your bag</a>
-          <span>2</span>
-          <a href="">
-            <img src="images/search.png" alt="search" data-rjs="2">
-          </a>
-        </div>
-      </nav>
-    </div>
-  </div>
   <header class="products">
     <h1 class="products__title">Catalog</h1>
-    <nav class="categories">
+    <nav class="categories products__menu">
       <ul>
-        <li class="categories__item"><a href="">all</a></li>
-        <li class="categories__item"><a href="">t-shirts</a></li>
-        <li class="categories__item"><a href="">sweaters</a></li>
-        <li class="categories__item"><a href="">shorts</a></li>
-        <li class="categories__item"><a href="">jackets</a></li>
-        <li class="categories__item"><a href="">accesoires</a></li>
+        <li class="categories__item">
+          <a href="" class="link link__medium link__active">all</a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="link link__medium">t-shirts</a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="link link__medium">sweaters</a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="link link__medium">shorts</a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="link link__medium">jackets</a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="link link__medium">accesoires</a>
+        </li>
       </ul>
     </nav>
     <div class="products__content">
       <ul class="products__list">
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/printed-swimsuit.jpg" alt="Printed swimsuit" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">Printed swimsuit</a></h2>
-              <span>$23</span>
-            </figcaption>
-          </figure>
+          <div class="product-card">
+            <figure class="figure">
+              <a href=""><img src="images/printed-swimsuit.jpg" alt="Printed swimsuit" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">Printed swimsuit</a></h2>
+                <span class="price">$23</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/blue-shorts.jpg" alt="Jogging bermuda shorts" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">Jogging bermuda shorts</a></h2>
-              <span>$36</span><span>$12</span>
-            </figcaption>
-          </figure>
-          <div>new</div>
+          <div class="product-card">
+            <figure class="figure">
+              <a href=""><img src="images/blue-shorts.jpg" alt="Jogging bermuda shorts" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">Jogging bermuda shorts</a></h2>
+                <span class="price  price__old">$36</span><span class="price price__special">$12</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/beach-flip-flops.jpg" alt="Basic beach flip flops" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">Basic beach flip flops</a></h2>
-              <span>$9</span>
-            </figcaption>
-          </figure>
+          <div class="product-card new">
+            <figure class="figure">
+              <a href=""><img src="images/beach-flip-flops.jpg" alt="Basic beach flip flops" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">Basic beach flip flops</a></h2>
+                <span class="price">$9</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/black-sunglasses.jpg" alt="Black sunglasses" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">Black sunglasses</a></h2>
-              <span>$29</span>
-            </figcaption>
-          </figure>
+          <div class="product-card">
+            <figure class="figure">
+              <a href=""><img src="images/black-sunglasses.jpg" alt="Black sunglasses" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">Black sunglasses</a></h2>
+                <span class="price">$29</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/twill-shirt.jpg" alt="Long sleeved twill shirt" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">Long sleeved twill shirt</a></h2>
-              <span>$20</span>
-            </figcaption>
-          </figure>
+          <div class="product-card">
+            <figure class="figure">
+              <a href=""><img src="images/twill-shirt.jpg" alt="Long sleeved twill shirt" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">Long sleeved twill shirt</a></h2>
+                <span class="price">$20</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/basic-swimsuit.jpg" alt="Basic swimsuit" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">Basic swimsuit</a></h2>
-              <span>$36</span>
-            </figcaption>
-          </figure>
+          <div class="product-card">
+            <figure class="figure">
+              <a href=""><img src="images/basic-swimsuit.jpg" alt="Basic swimsuit" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">Basic swimsuit</a></h2>
+                <span class="price">$36</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/bleached-shorts.jpg" alt="Bleached shorts" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">Bleached shorts</a></h2>
-              <span>$12</span>
-            </figcaption>
-          </figure>
+          <div class="product-card">
+            <figure class="figure">
+              <a href=""><img src="images/bleached-shorts.jpg" alt="Bleached shorts" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">Bleached shorts</a></h2>
+                <span class="price">$12</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
         <li class="products__item">
-          <figure>
-            <a href=""><img src="images/t-shirt-lower-panel.jpg" alt="T-shirt with lower panel" data-rjs="2"></a>
-            <figcaption>
-              <h2><a href="">T-shirt with lower panel</a></h2>
-              <span>$32</span><span>$12</span>
-            </figcaption>
-          </figure>
+          <div class="product-card">
+            <figure class="figure">
+              <a href=""><img src="images/t-shirt-lower-panel.jpg" alt="T-shirt with lower panel" class="figure__img" data-rjs="2"></a>
+              <figcaption>
+                <h2><a href="" class="figure__name">T-shirt with lower panel</a></h2>
+                <span class="price price__old">$32</span><span class="price price__special">$12</span>
+              </figcaption>
+            </figure>
+          </div>
         </li>
       </ul>
     </div>
-    <button>load more...</button>
+    <button class="button products__button">load more...</button>
   </header>
   <section class="subscribe">
     <p>subscribe</p>

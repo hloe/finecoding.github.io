@@ -1,0 +1,43 @@
+@import "../core/_core.scss";
+.search-icon {
+  width: 14px;
+  height: 14px;
+}
+
+input[type="email"] {
+  position: relative;
+  padding-left: 24px;
+  width: 302px;
+  height: 50px;
+  border: 2px solid $border-blue;
+  border: 2px solid $white-transparent;
+  border-radius: 25px;
+  outline-width: 0;
+  background-color: transparent;
+  @include retina('../images/white-arrow.png', 2, 6px 10px, 270px center no-repeat);
+  @include lato-bold;
+  font-size: .75rem;
+  letter-spacing: .063rem;
+  color: $white;
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+  color: $white;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  color: $white;
+  text-transform: uppercase;
+}
+
+:-moz-placeholder {
+  color: $white;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  color: $white;
+  text-transform: uppercase;
+}
