@@ -15,7 +15,7 @@
 @media screen and (max-width:767px) {
 
   
-  /* HEADER */
+  /* MENU */
   
   .fixedratio {
     background-image: url('../images/head767.jpg');
@@ -122,7 +122,7 @@
 @media screen and (min-width:768px) and (max-width:991px) {
 
   
-  /* HEADER */
+  /* MENU */
   
   .fixedratio {
     background-image: url('../images/head991.jpg');

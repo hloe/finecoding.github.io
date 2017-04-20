@@ -23,8 +23,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <!-- Animation -->
-  <link rel="stylesheet" href="css/animate.css">
 
   <!-- Google Analytics -->
   <script>
@@ -49,9 +47,9 @@
   <!-- Header -->
   <div class="row">
     <div class="col-xs-12 col-lg-12">
-      <div class="header">
+      <div class="menu">
         <figure class="fixedratio">
-          <nav class="nav clearfix wow fadeInUp">
+          <nav class="nav clearfix">
             <ul class="menu-list">
               <li class="menu-item">
                 <a href="#me" class="menu-link">about me</a>
@@ -64,11 +62,11 @@
               </li>
             </ul>
           </nav>
-          <p class="wow fadeInUp may">
+          <p class="may">
             <a href="#me" class="may-link">May I introduce myself?</a>
           </p>
-          <hr class="hidden-xs wow fadeInUp white-line" />
-          <p class="hidden-xs wow fadeInUp with-love">
+          <hr class="hidden-xs white-line" />
+          <p class="hidden-xs with-love">
             Responsive Design with Love
           </p>
         </figure>
@@ -83,95 +81,50 @@
     </div>
   </div>
 
-  <header class="row wow fadeInUp">
+  <header class="row" id="me">
     <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-      <a id="me"></a>
       <h1 class="title">Larysa Goroshanska</h1>
       <p class="text">
         Hello! I specialize in the coding of email templates, landing pages and websites. If you need quality qualitative coding, you are always welcome!
       </p>
       <p class="text">
-        I use in my work HTML5, CSS3, Bootstrap, jQuery, JavaScript and PHP.
+        I use in my work HTML5, CSS3, SCSS, JavaScript, jQuery and React; concepts Mobile First and Progressive Enhancement.
       </p>
     </div>
   </header>
 
-  <!-- Hidden for Mobile -->
-  <section class="row wow fadeInUp">
-    <div class="hidden-xs col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-      <div class="column-container">
-        <div class="column-big">
-          <h2 class="subtitle">Email Coding</h2>
-          <p class="column-big-p">I know the ropes of Email HTML coding. My templates look good as on different devices as on different email clients, such as Gmail or Outlook Express.</p>
-        </div>
-        <div class="column-big">
-          <h2 class="subtitle">Cross-Browser Coding</h2>
-          <p class="column-big-p">Due to using Bootstrap pages have responsive design. In addition, I surely check my code on the cross-browser compatibility, validity and semantically.</p>
-        </div>
-        <div class="column-big">
-          <h2 class="subtitle">Ready Solutions</h2>
-          <p class="column-big-p">You can buy a ready template for the landing page. These templates are made out of free PSD, so you pay only for coding.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Visible for Mobile -->
-  <section class="row visible-xs wow fadeInUp">
-    <div class="col-xs-12">
-      <h2 class="subtitle"><a data-toggle="collapse" href="#el1" class="show-style1">Email Coding</a></h2>
-      <div id="el1" class="collapse">
-        <p class="column">
-          I know the ropes of Email HTML coding. My templates look good as on different devices as on different email clients, such as Gmail or Outlook Express.
-        </p>
-      </div>
-      <h2 class="subtitle"><a data-toggle="collapse" href="#el2" class="show-style1">Cross-Browser Coding</a></h2>
-      <div id="el2" class="collapse">
-        <p class="column">
-          Due to using Bootstrap pages have responsive design. In addition, I surely check my code on the cross-browser compatibility, validity and semantically.
-        </p>
-      </div>
-      <h2 class="subtitle"><a data-toggle="collapse" href="#el3" class="show-style1">Ready Solutions</a></h2>
-      <div id="el3" class="collapse">
-        <p class="column">
-          You can also buy ready template of landing page. These templates are made out of free PSD, so you pay only for coding.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <div class="row wow fadeInUp">
+  <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
       <hr class="hr">
     </div>
   </div>
 
   <!-- PORTFOLIO -->
-  <a id="work"></a>
-  <section>
-    <div class="row wow fadeInUp">
+  <section id="work">
+    <div class="row">
       <div class="col-xs-12 col-lg-12">
         <h3 class="portfolio-title">Work</h3>
       </div>
     </div>
     <div class="row">
       <!-- First line -->
-      <div class="wow fadeInLeft col-xs-12 col-lg-12">
+      <div class="col-xs-12 col-lg-12">
         <div class="column-big1">
           <div class="img-block">
-            <a href="http://www.finecoding.net/projects/EmailTemplates/treblab/index.html" target="_blank">
-              <img src="images/treblab.jpg" alt="PSD to HTML Email for TREBLAB" class="port-img" />
+            <a href="projects/landings/mobileapp/dist/index.html" target="_blank">
+              <img src="images/mobileapp.jpg" alt="Competitive Mockup for IT Challenges" class="port-img" />
               <div class="over-block"></div>
-              <span>PSD to Responsive Email</span>
+              <span>Competitive Mockup</span>
             </a>
           </div>
         </div>
+
         <div class="column-big1">
           <div class="img-block">
-            <a href="projects/EmailTemplates/Chicardi/index.html" target="_blank">
-              <img src="images/Chicardi.jpg" alt="Email Template in Russian" class="port-img" />
+            <a href="projects/EmailTemplates/treblab/index.html" target="_blank">
+              <img src="images/treblab.jpg" alt="PSD to HTML Email for TREBLAB" class="port-img" />
               <div class="over-block"></div>
-              <span>Mailchimp Template</span>
+              <span>PSD to Responsive Email</span>
             </a>
           </div>
         </div>
@@ -186,7 +139,7 @@
         </div>
         <div class="column-big1">
           <div class="img-block">
-            <a href="http://www.finecoding.net/projects/EmailTemplates/QComment/index.html" target="_blank">
+            <a href="projects/EmailTemplates/QComment/index.html" target="_blank">
               <img src="images/QComment.jpg" alt="Responsive Email for QComment" class="port-img" />
               <div class="over-block"></div>
               <span>PSD to Mailchimp</span>
@@ -197,7 +150,7 @@
 
       <!-- Second line -->
       <!-- Hidden on Mobile -->
-      <div id="show-me" class="wow fadeInRight col-xs-12 col-lg-12 collapse">
+      <div id="show-me" class="col-xs-12 col-lg-12 collapse">
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/EmailTemplates/VisaCenter/index.html" target="_blank">
@@ -209,7 +162,7 @@
         </div>
         <div class="column-big1">
           <div class="img-block">
-            <a href="http://www.finecoding.net/projects/EmailTemplates/Intercountry/index.html" target="_blank">
+            <a href="projects/EmailTemplates/Intercountry/index.html" target="_blank">
               <img src="images/Intercountry.jpg" alt="Responsive Email for Intercountry" class="port-img" />
               <div class="over-block"></div>
               <span>PSD to Responsive Email</span>
@@ -225,23 +178,23 @@
             </a>
           </div>
         </div>
+        <div class="column-big1">
+          <div class="img-block">
+            <a href="projects/EmailTemplates/Chicardi/index.html" target="_blank">
+              <img src="images/Chicardi.jpg" alt="Email Template in Russian" class="port-img" />
+              <div class="over-block"></div>
+              <span>Mailchimp Template</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Button: Show hidden block -->
-    <div class="row wow fadeInUp">
+    <div class="row">
       <div class="button2">
-        <!-- Change link's title -->
-        <script type="text/javascript">
-          function Go(Obj) {
-            var obj = getElementByClassName('purple-button');
-            obj[1].innerHTML = (obj[1].innerHTML == 'view more') ? 'view less' : 'view more';
-          }
-        </script>
-        <a href="#show-me" class="purple-button" data-toggle="collapse" onclick="Go(this); return false;">view more</a>
+        <a href="#show-me" data-toggle="collapse" class="purple-button">view more</a>
       </div>
     </div>
-    <!-- End Button -->
   </section>
 
 
@@ -252,8 +205,7 @@
   </div>
 
   <!-- FOOTER -->
-  <a id="contact"></a>
-  <div class="row wow fadeInUp">
+  <div class="row" id="contact">
     <footer class="footer col-xs-12 col-lg-12">
       <p class="icons">
         <a href="https://www.facebook.com/goroshanska" class="footer-link" target="_blank">
@@ -277,12 +229,7 @@
     </footer>
   </div>
 
-  <!-- Animation -->
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-
+  <script src="js/button.js"></script>
 </body>
 
 </html>
