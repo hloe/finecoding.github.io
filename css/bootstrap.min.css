@@ -125,7 +125,6 @@ samp {
   font-size: 1em
 }
 
-button,
 input,
 optgroup,
 select,
@@ -133,34 +132,6 @@ textarea {
   color: inherit;
   font: inherit;
   margin: 0
-}
-
-button {
-  overflow: visible
-}
-
-button,
-select {
-  text-transform: none
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer
-}
-
-button[disabled],
-html input[disabled] {
-  cursor: default
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0
 }
 
 input {
@@ -175,10 +146,7 @@ input[type="radio"] {
   padding: 0
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto
-}
+
 
 input[type="search"] {
   -webkit-appearance: textfield;
@@ -187,10 +155,7 @@ input[type="search"] {
   box-sizing: content-box
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none
-}
+
 
 fieldset {
   border: 1px solid #c0c0c0;
@@ -1315,7 +1280,6 @@ body {
 }
 
 input,
-button,
 select,
 textarea {
   font-family: inherit;

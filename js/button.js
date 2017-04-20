@@ -1,6 +1,5 @@
 'use strict';
 let button = document.getElementsByClassName('purple-button')[1];
-console.log(button);
 
 button.addEventListener('click', go);
 

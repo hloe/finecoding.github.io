@@ -48,7 +48,7 @@
   <div class="row">
     <div class="col-xs-12 col-lg-12">
       <div class="menu">
-        <figure class="fixedratio">
+        <figure class="fixedratio" data-rjs="2">
           <nav class="nav clearfix">
             <ul class="menu-list">
               <li class="menu-item">
@@ -112,7 +112,7 @@
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/landings/mobileapp/dist/index.html" target="_blank">
-              <img src="images/mobileapp.jpg" alt="Competitive Mockup for IT Challenges" class="port-img" />
+              <img src="images/mobileapp.jpg" alt="Competitive Mockup for IT Challenges" class="port-img" data-rjs="2">
               <div class="over-block"></div>
               <span>Competitive Mockup</span>
             </a>
@@ -122,7 +122,7 @@
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/EmailTemplates/treblab/index.html" target="_blank">
-              <img src="images/treblab.jpg" alt="PSD to HTML Email for TREBLAB" class="port-img" />
+              <img src="images/treblab.jpg" alt="PSD to HTML Email for TREBLAB" class="port-img" data-rjs="2">
               <div class="over-block"></div>
               <span>PSD to Responsive Email</span>
             </a>
@@ -140,7 +140,7 @@
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/EmailTemplates/QComment/index.html" target="_blank">
-              <img src="images/QComment.jpg" alt="Responsive Email for QComment" class="port-img" />
+              <img src="images/QComment.jpg" alt="Responsive Email for QComment" class="port-img" data-rjs="2">
               <div class="over-block"></div>
               <span>PSD to Mailchimp</span>
             </a>
@@ -154,7 +154,7 @@
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/EmailTemplates/VisaCenter/index.html" target="_blank">
-              <img src="images/visacenter.jpg" alt="Email. PSD to HTML" class="port-img" />
+              <img src="images/visacenter.jpg" alt="Email. PSD to HTML" class="port-img" data-rjs="2">
               <div class="over-block"></div>
               <span>PSD to Responsive Email</span>
             </a>
@@ -163,7 +163,7 @@
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/EmailTemplates/Intercountry/index.html" target="_blank">
-              <img src="images/Intercountry.jpg" alt="Responsive Email for Intercountry" class="port-img" />
+              <img src="images/Intercountry.jpg" alt="Responsive Email for Intercountry" class="port-img" data-rjs="2">
               <div class="over-block"></div>
               <span>PSD to Responsive Email</span>
             </a>
@@ -172,7 +172,7 @@
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/EmailTemplates/CarbonFiber/index.html" target="_blank">
-              <img src="images/CarbonFiber.jpg" alt="Email Template for Carbon Fiber" class="port-img" />
+              <img src="images/CarbonFiber.jpg" alt="Email Template for Carbon Fiber" class="port-img" data-rjs="2">
               <div class="over-block"></div>
               <span>Responsive Email Template</span>
             </a>
@@ -181,16 +181,18 @@
         <div class="column-big1">
           <div class="img-block">
             <a href="projects/EmailTemplates/Chicardi/index.html" target="_blank">
-              <img src="images/Chicardi.jpg" alt="Email Template in Russian" class="port-img" />
+              <img src="images/Chicardi.jpg" alt="Email Template in Russian" class="port-img" data-rjs="2">
               <div class="over-block"></div>
               <span>Mailchimp Template</span>
             </a>
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="row">
+
       <div class="button2">
         <a href="#show-me" data-toggle="collapse" class="purple-button">view more</a>
       </div>
@@ -201,7 +203,7 @@
   <!-- Button Up -->
   <script src="js/scrollUpButton.js"></script>
   <div class="scrollup clearfix">
-    <img alt="Go up" src="images/arrowPink.png">
+    <img alt="Go up" src="images/arrow-up.svg">
   </div>
 
   <!-- FOOTER -->
@@ -209,10 +211,14 @@
     <footer class="footer col-xs-12 col-lg-12">
       <p class="icons">
         <a href="https://www.facebook.com/goroshanska" class="footer-link" target="_blank">
-          <img class="footer-icons clearfix" alt="facebook" src="images/facebook.png" onmouseout="this.src = 'images/facebook.png'" onmouseover="this.src = 'images/facebook_hover.png'" />
+          <svg class="footer-icons">
+            <use xlink:href="./images/footer_sprite.svg#facebook"></use>
+          </svg>
         </a>
-        <a href="https://www.linkedin.com/in/larysa-goroshanska-805941120" class="footer-link" target="_blank">
-          <img class="footer-icons clearfix" alt="linkedin" src="images/linkedin.png" onmouseout="this.src = 'images/linkedin.png'" onmouseover="this.src = 'images/linkedin_hover.png'" />
+        <a href="https://www.linkedin.com/in/larysa-goroshanska/" class="footer-link" target="_blank">
+          <svg class="footer-icons">
+            <use xlink:href="./images/footer_sprite.svg#linkedin"></use>
+          </svg>
         </a>
       </p>
       <span class="hidden-xs">
@@ -220,16 +226,25 @@
       </span>
       <ul class="footer-list">
         <li class="footer-item footer-link">
-          <img src="images/email.png" width="20" height="20" alt="email" />&nbsp;&nbsp;goroshanska@gmail.com
+          <svg class="contact-icon">
+            <use xlink:href="./images/footer_sprite.svg#email"></use>
+          </svg>goroshanska@gmail.com
+
+          <!--          <img src="images/email.png" width="20" height="20" alt="email" />&nbsp;&nbsp;goroshanska@gmail.com-->
         </li>
         <li class="footer-item footer-link">
-          <img src="images/skype.png" width="20" height="20" alt="skype" />&nbsp;&nbsp;larisa_goroshanska
+          <!--          <img src="images/skype.png" width="20" height="20" alt="skype" />&nbsp;&nbsp;-->
+          <svg class="contact-icon">
+            <use xlink:href="./images/footer_sprite.svg#skype"></use>
+          </svg>
+          larisa_goroshanska
         </li>
       </ul>
     </footer>
   </div>
 
   <script src="js/button.js"></script>
+  <script src="js/retina.min.js"></script>
 </body>
 
 </html>
