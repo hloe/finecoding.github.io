@@ -1,0 +1,23 @@
+@mixin garamond {
+  font-family: 'Garamond Regular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin opensans {
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin opensans-bold {
+  font-family: 'Open Sans Bold';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin opensans-italic {
+  font-family: 'Open Sans Italic';
+  font-weight: normal;
+  font-style: normal;
+}
