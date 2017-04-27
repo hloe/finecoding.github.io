@@ -2,44 +2,40 @@
 .watch {
   @include clearfix;
   &__content {
-    padding-top: 77px;
-    padding-bottom: 66px;
+    padding-top: 4.813rem;
+    padding-bottom: 4.125rem;
   }
   &__title {
-    margin-bottom: 19px;
+    margin-bottom: 1.188rem;
   }
   &__subtitle {
-    padding-left: 3px;
-
+    padding-left: .188rem;
     @include opensans-regular;
     font-size: 1rem;
     line-height: 1.625;
     color: $white;
-
-    @media (min-width: 992px) {
+    @media (min-width: 62rem) {
       width: 100%;
-
-      max-width: 550px;
+      max-width: 34.375rem;
     }
   }
   &__icons {
-    margin-top: 23px;
-    margin-left: 3px;
-    margin-bottom: 50px;
+    margin-top: 1.438rem;
+    margin-left: .188rem;
+    margin-bottom: 3.125rem;
   }
   &__iframe-container {
     position: relative;
-    max-width: 500px;
-
+    max-width: 31.25rem;
     margin: 0 auto;
     overflow: hidden;
-    border: 2px solid $video-background;
-    border-radius: 8px;
-    @media (min-width: 768px) {
-      height: 306px;
-      width: 500px;
+    border: .125rem solid $video-background;
+    border-radius: .5rem;
+    @media (min-width: 48rem) {
+      height: 19.125rem;
+      width: 31.25rem;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 62rem) {
       float: right;
       right: 0;
     }
@@ -52,7 +48,6 @@
   &__iframe {
     position: absolute;
     z-index: 1;
-
     top: 0;
     left: 0;
     width: 100%;

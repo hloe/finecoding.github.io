@@ -6,36 +6,36 @@
   
   .features-article {
     @include clearfix;
-    margin: 0 auto 50px;
-    padding-left: 13px;
+    margin: 0 auto 3.125rem;
+    padding-left: .813rem;
     text-align: center;
-    @media (min-width: 768px) {
-      margin: 0 auto 100px;
+    @media (min-width: 48rem) {
+      margin: 0 auto 6.25rem;
       &:last-of-type {
         margin-bottom: 0;
       }
     }
     &__icon {
       display: block;
-      margin: 0 auto 10px;
+      margin: 0 auto .625rem;
       vertical-align: top;
-      @media (min-width: 768px) {
+      @media (min-width: 48rem) {
         float: left;
         margin-bottom: 0;
-        margin-right: 41px;
+        margin-right: 2.563rem;
       }
     }
     &__body {
       margin: 0 auto;
-      padding-top: 5px;
+      padding-top: .313rem;
       text-align: center;
-      @media (min-width: 768px) {
+      @media (min-width: 48rem) {
         float: left;
         text-align: left;
       }
     }
     &__title {
-      margin-bottom: 12px;
+      margin-bottom: .75rem;
       @include raleway-bold;
       font-size: 1.125rem;
       line-height: 1;
@@ -47,19 +47,15 @@
       line-height: 1.9;
       vertical-align: middle;
       white-space: pre-wrap;
-      @media (min-width: 768px) {
-        max-width: 245px;
+      @media (min-width: 48rem) {
+        max-width: 15.313rem;
       }
     }
   }
   
   .say-article {
-    &__img {
-      height: 100px;
-      width: 100px;
-    }
     &__author {
-      margin-top: 20px;
+      margin-top: 1.25rem;
       @include opensans-semibold;
       font-size: 1.125rem;
       line-height: 1.5;
@@ -72,6 +68,6 @@
       line-height: 1;
     }
     &__quote {
-      margin-top: 101px;
+      margin-top: 6.313rem;
     }
   }

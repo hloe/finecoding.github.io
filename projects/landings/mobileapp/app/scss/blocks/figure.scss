@@ -2,17 +2,16 @@
 .figure {
   display: block;
   position: relative;
-    &__img {
-    height: 300px;
-    width: 270px;
+  &__img {
+    height: 18.75rem;
+    width: 16.875rem;
   }
-
   &__title {
     @include opensans-semibold;
     color: $team-text;
     line-height: 1.333;
-    margin-bottom: 5px;
-    margin-top: 12px;
+    margin-bottom: .313rem;
+    margin-top: .75rem;
     font-size: 1.125rem;
   }
   &__text {

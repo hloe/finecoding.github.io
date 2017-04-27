@@ -8,9 +8,9 @@
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: .063rem;
+  height: .063rem;
+  margin: -.063rem;
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -62,8 +62,8 @@
     transition: transform 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
+    -webkit-perspective: 62.5rem;
+    perspective: 62.5rem;
   }
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
@@ -128,15 +128,15 @@
   padding-left: 0;
   text-align: center;
   margin: 0 auto;
-  width: 90px;
+  width: 5.625rem;
 }
 
 .carousel-indicators li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-left: 8px;
-  text-indent: -999px;
+  width: .625rem;
+  height: .625rem;
+  margin-left: .5rem;
+  text-indent: -62.438rem;
   border-radius: 50%;
   cursor: pointer;
   background-color: $pointer;
@@ -149,10 +149,10 @@
 .carousel-caption {
   left: 15%;
   right: 15%;
-  bottom: 20px;
+  bottom: 1.25rem;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   text-align: center;
 }
 
@@ -160,11 +160,11 @@
   text-shadow: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .carousel-caption {
     left: 20%;
     right: 20%;
-    padding-bottom: 45px;
+    padding-bottom: 2.813rem;
   }
 }
 

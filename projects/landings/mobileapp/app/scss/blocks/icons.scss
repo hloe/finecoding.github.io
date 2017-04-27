@@ -6,16 +6,16 @@
 .icon-download {
   position: relative;
   float: left;
-  top: 8px;
-  left: 14px;
-  height: 35px;
-  width: 37px;
+  top: .5rem;
+  left: .875rem;
+  height: 2.188rem;
+  width: 2.313rem;
   fill: $white;
 }
 
 .icon-angle {
-  height: 32px;
-  width: 32px;
+  height: 2rem;
+  width: 2rem;
   line-height: 2.25;
   vertical-align: middle;
   fill: $white;
@@ -27,16 +27,16 @@
 .icon-earphones,
 .icon-finger,
 .icon-compass {
-  height: 37px;
-  width: 37px;
+  height: 2.313rem;
+  width: 2.313rem;
   fill: $logo-color;
 }
 
 .icon-circle {
   display: inline-block;
-  height: 68px;
-  width: 68px;
-  margin-right: 18px;
+  height: 4.25rem;
+  width: 4.25rem;
+  margin-right: 1.125rem;
   border-radius: 50%;
   background-color: $system;
   &:last-of-type {
@@ -47,19 +47,19 @@
 .icon-apple,
 .icon-android,
 .icon-windows {
-  height: 34px;
-  width: 34px;
-  margin-top: 17px;
-  margin-left: 17px;
+  height: 2.125rem;
+  width: 2.125rem;
+  margin-top: 1.063rem;
+  margin-left: 1.063rem;
   fill: $white;
 }
 
 .icon-square {
   display: inline-block;
-  height: 42px;
-  width: 42px;
-  padding-top: 9px;
-  margin-right: 4px;
+  height: 2.625rem;
+  width: 2.625rem;
+  padding-top: .563rem;
+  margin-right: .25rem;
   background: $black;
   background: $transparent-black;
   &:last-of-type {
@@ -70,28 +70,25 @@
 .icon-twitter,
 .icon-facebook,
 .icon-google-plus {
-  height: 21px;
-  width: 23px;
+  height: 1.313rem;
+  width: 1.438rem;
   fill: $white;
-
 }
 
 .facebook-circle,
 .twitter-circle,
 .google-circle {
   display: inline-block;
-  height: 41px;
-  width: 41px;
-
-  padding-top: 10px;
-  padding-left: 10px;
+  height: 2.563rem;
+  width: 2.563rem;
+  padding-top: .625rem;
+  padding-left: .625rem;
   border-radius: 50%;
-
 }
 
 .facebook-circle,
 .twitter-circle {
-  margin-right: 12px;
+  margin-right: .75rem;
 }
 
 .facebook-circle {

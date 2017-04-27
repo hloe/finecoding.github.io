@@ -1,11 +1,11 @@
 @import "../core/_core.scss";
 .team {
-  padding-top: 87px; 
-    padding-bottom: 50px;
+  padding-top: 5.438rem; 
+    padding-bottom: 3.125rem;
   text-align: center;
   &__subtitle {
-    max-width: 970px;
-    margin: 36px auto 0;
+    max-width: 60.625rem;
+    margin: 2.25rem auto 0;
     @include opensans-semibold;
     font-size: 1rem;
     line-height: 1.5;
@@ -14,6 +14,6 @@
   }
   &__content {
     position: relative;
-    padding-top: 105px;
+    padding-top: 6.563rem;
   }
 }
