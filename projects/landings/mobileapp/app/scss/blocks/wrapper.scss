@@ -10,10 +10,10 @@
           @include retina('../images/header-background-md.jpg', 2, cover, top center no-repeat);
         }
         @media (min-width: 68.75rem) {
-          @include retina('../images/header-background-lg.jpg', 2, 1589px 758px, top center no-repeat);
+          @include retina('../images/header-background-lg.jpg', 2, 99.313rem 47.375rem, top center no-repeat);
         }
     @media (min-width: 75rem) {
-      @include retina('../images/header-background-shadow.jpg', 2, 1589px 758px, top center no-repeat);
+      @include retina('../images/header-background-shadow.jpg', 2, 99.313rem 47.375rem, top center no-repeat);
     }
   }
   &__watch {
