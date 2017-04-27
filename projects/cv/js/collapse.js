@@ -1,0 +1,1 @@
+"use strict";$(".collapse").click(function(){$(this).toggleClass("closed open"),$(this).children(".collapse-content").slideToggle("slow")});
