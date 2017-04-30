@@ -1,1 +1,1 @@
-"use strict";$(".collapse").click(function(){$(this).toggleClass("closed open"),$(this).children(".collapse-content").slideToggle("slow")});
+"use strict";$(".collapse-title").click(function(){$(this).toggleClass("closed open"),$(this).siblings(".collapse-content").slideToggle("slow")});
