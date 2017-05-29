@@ -1,0 +1,18 @@
+@import "../core/_core.scss";
+.works {
+  &__text {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.card-link {
+  display: block;
+}
+
+.card {
+  &__img {}
+  &__shadow {}
+  &__title {}
+  &__text {}
+}
