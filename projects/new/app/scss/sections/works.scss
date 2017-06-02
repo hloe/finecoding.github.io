@@ -1,5 +1,17 @@
 @import "../core/_core.scss";
 .works {
+  &__header {
+    height: 5.625rem;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__content {}
+  &__title {
+    font-size: 1.625rem;
+    font-family: 'Lato Light';
+    font-weight: 300;
+    font-style: normal;
+  }
   &__text {
     text-align: center;
     font-style: italic;
@@ -11,8 +23,23 @@
 }
 
 .card {
-  &__img {}
-  &__shadow {}
-  &__title {}
+  color: $white;
+  &__img {
+    width: 16.875rem;
+    height: 16.875rem;
+  }
+  &__shadow {
+    width: 16.875rem;
+    height: 16.875rem;
+    background-color: $shadow;
+    background-color: $dark-shadow;
+  }
+  &__title {
+    font-size: 1.875rem;
+    font-family: 'Lato Light';
+    font-weight: 300;
+    font-style: normal;
+    text-transform: capitalize;
+  }
   &__text {}
 }

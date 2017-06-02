@@ -1,0 +1,15 @@
+@import "../core/_core.scss";
+.wrapper {
+  &__promo {
+    background-color: $dark-accent;
+  }
+  &__dark {
+    background-color: $dark-accent;
+  }
+  &__light {
+    background-color: $light-accent;
+  }
+  &__gray {
+    background-color: $background;
+  }
+}

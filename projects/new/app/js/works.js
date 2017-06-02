@@ -42,6 +42,7 @@
 
   function showWorks(result) {
     let container = document.getElementById('container');
+    let fragment = document.createDocumentFragment();
     //container.innerHTML = result.works[0].title;
 
     for (let i = 0; i < result.works.length; i++) {
@@ -77,8 +78,10 @@
       divImg.appendChild(image);
       divImg.appendChild(shadow);
       link.appendChild(divImg);
-      container.appendChild(link);
+      fragment.appendChild(link);
     }
+
+    container.appendChild(fragment);
   }
 
   function ups() {

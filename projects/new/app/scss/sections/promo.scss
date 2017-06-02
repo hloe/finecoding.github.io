@@ -1,0 +1,39 @@
+@import "../core/_core.scss";
+.promo {
+  background-color: $dark-accent;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  &__title {
+    font-family: 'Lato Hairline';
+    font-size: 3.125rem;
+    font-weight: 300;
+    font-style: normal;
+  }
+  &__list {}
+  &__item {
+    font-size: 1.25rem;
+    font-family: 'Lato Bold';
+    font-weight: bold;
+    font-style: normal;
+  }
+  &__link {
+    display: block;
+    width: 8.625rem;
+    height: 2.125rem;
+    background-color: $light-accent;
+    border-radius: 3px;
+    box-shadow: .063rem .108rem .125rem 0 $black;
+    font-size: 1rem;
+    line-height: 2.125rem;
+    vertical-align: middle;
+    font-family: 'Lato Regular';
+    font-weight: normal;
+    font-style: normal;
+    color: $white;
+    &:hover {
+      @include transition;
+      color: $ligth-accent-hover;
+    }
+  }
+}
