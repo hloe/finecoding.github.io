@@ -1,0 +1,59 @@
+@import "../core/_core.scss";
+.new {
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    z-index: 2;
+    top: 1.625rem;
+    left: 1.625rem;
+    width: 3rem;
+    height: 1.563rem;
+    content: 'new';
+    @include retina('../images/new.png', 2, cover, top center no-repeat);
+    @include lato-bold;
+    font-size: .688rem;
+    line-height: 1.563rem;
+    letter-spacing: .063rem;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.figure {
+  margin-bottom: 2.188rem;
+  text-align: center;
+  &__img {
+    margin-bottom: 1.125rem;
+  }
+  &__name {
+    @include playfair;
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: normal;
+    color: $active;
+    text-decoration: none;
+    &:hover {
+      color: $logo-hover;
+    }
+  }
+}
+
+.price {
+  @include lato-regular;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: $light-grey;
+  color: $light-grey-transparent;
+  &__old {
+    margin-right: .688rem;
+    text-decoration: line-through;
+  }
+  &__special {
+    color: $special;
+  }
+}

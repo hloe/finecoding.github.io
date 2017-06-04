@@ -1,0 +1,29 @@
+@import "../core/_core.scss";
+.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 3.75rem;
+}
+
+.footer-menu {
+  &__list {
+    @include list;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 3.438rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.copyright {
+  @include lato-bold;
+  font-size: .75rem;
+  line-height: 1;
+  letter-spacing: .075rem;
+  color: $light-grey;
+  color: $light-grey-transparent;
+}

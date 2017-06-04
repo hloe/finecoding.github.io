@@ -1,0 +1,39 @@
+@mixin didot-bold {
+    font-family: 'Didot Bold', Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin lato-regular {
+  font-family: 'Lato Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin lato-bold {
+  font-family: 'Lato Bold', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin playfair {
+  font-family: 'Playfair Display Regular', Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin list {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -.063rem;
+}
