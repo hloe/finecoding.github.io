@@ -4,35 +4,45 @@
   &__title {
     color: $dark-accent;
   }
+  &__text {
+    margin-bottom: 2rem;
+    &_center {
+      text-align: center;
+    }
+    &_left {
+      text-align: center;
+      @media (min-width: 40rem) {
+        text-align: left;
+      }
+    }
+  }
   &__subtitle {
     font-family: 'Open Sans Bold';
     font-weight: bold;
     font-style: normal;
     line-height: 1.5;
+    text-align: center;
     color: $dark-accent;
+    @media (min-width: 40rem) {
+      text-align: left;
+    }
   }
 }
 
-.icon {
-  width: 1.5rem;
-  height: 1.5rem;
-
-}
-
-.icon {
-  &__list {}
-  &__item {}
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background-color: $dark-accent;
-    &:hover {
-      @include transition;
-      background-color: $light-accent;
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+  &__item {
+    @media (min-width: 40rem) {
+      margin-right: 5rem;
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 }

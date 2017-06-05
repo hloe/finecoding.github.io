@@ -1,26 +1,53 @@
 @import "../core/_core.scss";
 .promo {
-  background-color: $dark-accent;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  &__title {
-    font-family: 'Lato Hairline';
-    font-size: 3.125rem;
-    font-weight: 300;
-    font-style: normal;
+  @media (min-width: 40rem) {
+    padding-top: 9rem;
+    padding-bottom: 8rem;
   }
-  &__list {}
+  @media (min-width: 64rem) {
+    padding-top: 19rem;
+    padding-bottom: 14.75rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+    @media (min-width: 40rem) {
+      flex-direction: row;
+    }
+  }
   &__item {
     font-size: 1.25rem;
     font-family: 'Lato Bold';
     font-weight: bold;
     font-style: normal;
+    line-height: 1.4;
+    @media (min-width: 40rem) {
+      text-align: center;
+      &::after {
+        content: '|';
+        margin-bottom: 0;
+        margin-left: .375rem;
+        margin-right: .375rem;
+      }
+      &:last-of-type {
+        &::after {
+          content: '';
+        }
+      }
+    }
   }
   &__link {
     display: block;
     width: 8.625rem;
     height: 2.125rem;
+    margin: 3rem auto 0;
     background-color: $light-accent;
     border-radius: 3px;
     box-shadow: .063rem .108rem .125rem 0 $black;
@@ -33,7 +60,7 @@
     color: $white;
     &:hover {
       @include transition;
-      color: $ligth-accent-hover;
+      background-color: $ligth-accent-hover;
     }
   }
 }

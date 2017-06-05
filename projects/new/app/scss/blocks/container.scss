@@ -1,0 +1,17 @@
+@import "../core/_core.scss";
+.container {
+  min-width: 18rem;
+  padding-left: .938rem;
+  padding-right: .938rem;
+  outline: 1px solid pink;
+  @media (min-width: 40rem) {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+  @media (min-width: 64rem) {
+    max-width: 75rem;
+  }
+  &__no-paddings {
+    padding: 0;
+  }
+}

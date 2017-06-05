@@ -1,0 +1,28 @@
+@import "../core/_core.scss";
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    margin-right: 1.25rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: $dark-accent;
+    &:hover {
+      @include transition;
+      background-color: $light-accent;
+    }
+  }
+}

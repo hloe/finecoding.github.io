@@ -1,17 +1,61 @@
 @import "../core/_core.scss";
 .nav {
-  position: fixed;
-  z-index: 10;
-  background-color: $white;
-  &__list {}
-  &__item {}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.188rem;
+  padding-bottom: 1.188rem;
+  @media (min-width: 40rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__title {
+    padding-bottom: 1.875rem;
+    @media (min-width: 40rem) {
+      padding-bottom: 0;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    @media (min-width: 40rem) {
+      margin-left: 5rem;
+      justify-content: flex-end;
+    }
+    @media (max-width: 40rem) {
+      width: 20rem;
+    }
+  }
+  &__item {
+    width: 50%;
+    @media (min-width: 40rem) {
+      width: 7rem;
+    }
+    @media (min-width: 64rem) {
+      border-right: .063rem solid $light-gray;
+      &:last-of-type {
+        border-right: .063rem solid transparent;
+      }
+    }
+  }
   &__link {
+    position: relative;
+    display: block;
+    height: 3.125rem;
     font-family: 'Open Sans Regular';
     font-size: .875rem;
+    line-height: 3.125rem;
+    vertical-align: middle;
     font-weight: normal;
     font-style: normal;
+    text-align: center;
     text-transform: uppercase;
     color: $dark-accent;
+    &:last-of-type {
+      padding-right: 0;
+    }
     &:hover {
       @include transition;
       color: $light-accent;
@@ -19,32 +63,33 @@
     &_active {
       color: $light-accent;
     }
-  }
-}
-
-.logo {
-  &:hover {
-    @include transition;
-    filter: brightness(.8);
-  }
-  &__big {
-    font-size: 2.563rem;
-    font-family: 'Lato Black';
-    font-weight: 900;
-    font-style: normal;
-    text-transform: uppercase;
-    &_dark {
-      color: $dark-accent;
+    @media (min-width: 40rem) {
+      width: 7rem;
     }
-    &_light {
-      color: $light-accent;
+    @media (min-width: 64rem) {
+      &:hover {
+        @include transition;
+        &::after {
+          position: absolute;
+          z-index: 11;
+          content: '';
+          left: 3rem;
+          bottom: -2.937rem;
+          border: .875rem solid transparent;
+          border-top: .875rem solid $white;
+        }
+      }
+      &_active {
+        &::after {
+          position: absolute;
+          z-index: 11;
+          content: '';
+          left: 3rem;
+          bottom: -2.937rem;
+          border: .875rem solid transparent;
+          border-top: .875rem solid $white;
+        }
+      }
     }
-  }
-  &__small {
-    font-family: 'Lato Light';
-    font-size: 1.25rem;
-    font-weight: 300;
-    font-style: normal;
-    color: $gray;
   }
 }

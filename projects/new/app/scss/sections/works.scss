@@ -5,41 +5,29 @@
     text-transform: uppercase;
     color: $white;
   }
-  &__content {}
   &__title {
     font-size: 1.625rem;
     font-family: 'Lato Light';
     font-weight: 300;
     font-style: normal;
-  }
-  &__text {
-    text-align: center;
-    font-style: italic;
-  }
-}
-
-.card-link {
-  display: block;
-}
-
-.card {
-  color: $white;
-  &__img {
-    width: 16.875rem;
-    height: 16.875rem;
-  }
-  &__shadow {
-    width: 16.875rem;
-    height: 16.875rem;
-    background-color: $shadow;
-    background-color: $dark-shadow;
-  }
-  &__title {
-    font-size: 1.875rem;
-    font-family: 'Lato Light';
-    font-weight: 300;
-    font-style: normal;
-    text-transform: capitalize;
+    line-height: 5.625rem;
+    vertical-align: middle;
   }
   &__text {}
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: 40rem) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    margin: 0 auto 1.875rem;
+    @media (min-width: 40rem) {
+      margin: 0 .938rem 1.875rem;
+    }
+  }
 }

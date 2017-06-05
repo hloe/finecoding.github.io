@@ -1,18 +1,22 @@
 @import "../core/_core.scss";
 .about {
   color: $white;
-  &__link {
-    &:hover {
-      @include transition;
-      color: $light-accent;
+  text-align: center;
+  &__title {}
+  &__content {
+    @media (min-width: 40rem) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media (min-width: 64rem) {
+      width: 70%;
     }
   }
-}
-
-.centered-title {
-  font-family: 'Lato Light';
-  font-size: 2.5rem;
-  font-weight: 300;
-  font-style: normal;
-  text-transform: capitalize;
+  &__link {
+    color: $light-accent;
+    &:hover {
+      @include transition;
+      color: $ligth-accent-hover;
+    }
+  }
 }

@@ -1,0 +1,40 @@
+@import "../core/_core.scss";
+.centered-title {
+  position: relative;
+  display: block;
+  width: 14.625rem;
+  height: 3.75rem;
+  margin: 0 auto 3.75rem;
+  border-width: .063rem;
+  border-style: solid;
+  border-radius: .625rem;
+  font-family: 'Lato Light';
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 3.75rem;
+  text-align: center;
+  text-transform: capitalize;
+  vertical-align: middle;
+  &::before {
+    position: absolute;
+    top: -3.75rem;
+    left: 7.281rem;
+    display: block;
+    width: .063rem;
+    height: 3.75rem;
+    content: '';
+  }
+  &__light {
+    border-color: $light-gray;
+    &::before {
+      background-color: $light-gray;
+    }
+  }
+  &__dark {
+    border-color: $blue;
+    &::before {
+      background-color: $blue;
+    }
+  }
+}
