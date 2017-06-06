@@ -15,7 +15,7 @@
   function requestWorks() {
 
     // Create url for request
-    let url = 'https://api.myjson.com/bins/1gg5n5';
+    let url = 'https://api.myjson.com/bins/1fddvx';
 
     // Create new object XMLHttpRequest
     let xhr = new XMLHttpRequest();

@@ -1,9 +1,12 @@
 @import "../core/_core.scss";
 .footer {
+  padding-top: 3.75rem;
+  padding-bottom: 3.44rem;
   font-family: 'Open Sans Light';
   font-size: .875rem;
   color: $white;
   font-weight: 300;
   font-style: normal;
+  text-align: center;
   text-transform: uppercase;
 }
