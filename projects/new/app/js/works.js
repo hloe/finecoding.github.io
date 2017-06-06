@@ -1,15 +1,15 @@
 (function () {
   'use strict';
 
-  // If there isn't names array yet
-  if (localStorage.getItem('result') === null) {
-    // Take names from public API
+//  // If there isn't names array yet
+//  if (localStorage.getItem('result') === null) {
+//    // Take names from public API
     requestWorks();
-  } else {
-    // Take works from localStorage
-    let result = localStorage.result ? JSON.parse(localStorage.result) : [];
-    showWorks(result);
-  }
+//  } else {
+//    // Take works from localStorage
+//    let result = localStorage.result ? JSON.parse(localStorage.result) : [];
+//    showWorks(result);
+//  }
 
 
   function requestWorks() {
@@ -32,7 +32,8 @@
 
           var result = JSON.parse(xhr.responseText);
           // Write names array into localStorage
-          localStorage.result = JSON.stringify(result);
+         // localStorage.result = JSON.stringify(result);
+          showWorks(result);
         } else {
           ups();
         }
