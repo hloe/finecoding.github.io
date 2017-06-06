@@ -71,7 +71,7 @@
         @include transition;
         &::after {
           position: absolute;
-          z-index: 11;
+          z-index: 25;
           content: '';
           left: 3rem;
           bottom: -2.937rem;
@@ -82,7 +82,7 @@
       &_active {
         &::after {
           position: absolute;
-          z-index: 11;
+          z-index: 25;
           content: '';
           left: 3rem;
           bottom: -2.937rem;
