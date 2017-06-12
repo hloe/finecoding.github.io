@@ -1,0 +1,49 @@
+@import "../core/_core.scss";
+svg {
+  display: block;
+}
+
+.icon {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    margin-right: 1.25rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    &_contact {
+      background-color: $dark-accent;
+      &:hover {
+        @include transition;
+        background-color: $light-accent;
+      }
+    }
+    &_footer {
+      background-color: $light-accent;
+      &:hover {
+        @include transition;
+        background-color: $white;
+      }
+    }
+  }
+  &__svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    &_contact {
+      fill: $light-gray;
+    }
+    &_footer {
+      fill: $dark-accent;
+    }
+  }
+}

@@ -4,11 +4,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1.188rem;
-  padding-bottom: 1.188rem;
-  @media (min-width: 40rem) {
-    flex-direction: row;
-    justify-content: space-between;
+  &_header {
+    padding-top: 1.188rem;
+    padding-bottom: 1.188rem;
+    @media (min-width: 40rem) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &_footer {
+    @media (min-width: 40rem) {
+      flex-direction: row;
+    }
   }
   &__title {
     padding-bottom: 1.875rem;
@@ -20,25 +27,32 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    @media (min-width: 40rem) {
-      margin-left: 5rem;
-      justify-content: flex-end;
+    width: 100%;
+    &_header {
+      @media (min-width: 40rem) {
+        margin-left: 5rem;
+        justify-content: flex-end;
+      }
+      @media (max-width: 40rem) {
+        width: 20rem;
+      }
     }
-    @media (max-width: 40rem) {
-      width: 20rem;
-    }
+    &_footer {}
   }
   &__item {
     width: 50%;
     @media (min-width: 40rem) {
       width: 7rem;
     }
-    @media (min-width: 64rem) {
-      border-right: .063rem solid $light-gray;
-      &:last-of-type {
-        border-right: .063rem solid transparent;
+    &_header {
+      @media (min-width: 64rem) {
+        border-right: .063rem solid $light-gray;
+        &:last-of-type {
+          border-right: .063rem solid transparent;
+        }
       }
     }
+    &_footer {}
   }
   &__link {
     position: relative;
@@ -52,43 +66,50 @@
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
-    color: $dark-accent;
-    &:last-of-type {
-      padding-right: 0;
-    }
-    &:hover {
-      @include transition;
-      color: $light-accent;
-    }
-    &_active {
-      color: $light-accent;
-    }
-    @media (min-width: 40rem) {
-      width: 7rem;
-    }
-    @media (min-width: 64rem) {
-      &:hover {
-        @include transition;
-        &::after {
-          position: absolute;
-          z-index: 25;
-          content: '';
-          left: 3rem;
-          bottom: -2.937rem;
-          border: .875rem solid transparent;
-          border-top: .875rem solid $white;
+         &_active {
+         color: $light-accent;
+      //  background-color: red;
+        @media (min-width: 64rem) {
+//          &::after {
+//            position: absolute;
+//            z-index: 25;
+//            content: '';
+//            left: 3rem;
+//            bottom: -2.937rem;
+//            border: .875rem solid transparent;
+//            border-top: .875rem solid $white;
+//          }
         }
       }
-      &_active {
-        &::after {
-          position: absolute;
-          z-index: 25;
-          content: '';
-          left: 3rem;
-          bottom: -2.937rem;
-          border: .875rem solid transparent;
-          border-top: .875rem solid $white;
-        }
+    &_header {
+      color: $dark-accent;
+      &:hover {
+        @include transition;
+        color: $light-accent;
+      }
+      @media (min-width: 40rem) {
+        width: 7rem;
+      }
+//      @media (min-width: 64rem) {
+//        &:hover {
+//          &::after {
+//            position: absolute;
+//            z-index: 25;
+//            content: '';
+//            left: 3rem;
+//            bottom: -2.937rem;
+//            border: .875rem solid transparent;
+//            border-top: .875rem solid $white;
+//          }
+//        }
+//      }
+ 
+    }
+    &_footer {
+      color: $white;
+      &:hover {
+        @include transition;
+        color: $dark-accent;
       }
     }
   }

@@ -1,15 +1,8 @@
 (function () {
   'use strict';
 
-//  // If there isn't names array yet
-//  if (localStorage.getItem('result') === null) {
-//    // Take names from public API
-    requestWorks();
-//  } else {
-//    // Take works from localStorage
-//    let result = localStorage.result ? JSON.parse(localStorage.result) : [];
-//    showWorks(result);
-//  }
+  // Take names from public API
+  requestWorks();
 
 
   function requestWorks() {
@@ -31,8 +24,7 @@
         if (this.status == 200) { // xhr.status == 200, so the response is good
 
           var result = JSON.parse(xhr.responseText);
-          // Write names array into localStorage
-         // localStorage.result = JSON.stringify(result);
+          // Show results in html
           showWorks(result);
         } else {
           ups();
@@ -89,6 +81,5 @@
     p.innerHTML = 'Sorry, works aren\'t available at the moment.';
     container.appendChild(p);
   }
-
 
 })();
