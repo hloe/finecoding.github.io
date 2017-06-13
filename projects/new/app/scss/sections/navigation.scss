@@ -41,10 +41,10 @@
   }
   &__item {
     width: 50%;
-    @media (min-width: 40rem) {
-      width: 7rem;
-    }
     &_header {
+      @media (min-width: 40rem) {
+        width: 7rem;
+      }
       @media (min-width: 64rem) {
         border-right: .063rem solid $light-gray;
         &:last-of-type {
@@ -52,7 +52,15 @@
         }
       }
     }
-    &_footer {}
+    &_footer {
+      @media (min-width: 40rem) {
+        width: auto;
+        margin-right: 3rem;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
   }
   &__link {
     position: relative;
@@ -66,21 +74,6 @@
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
-         &_active {
-         color: $light-accent;
-      //  background-color: red;
-        @media (min-width: 64rem) {
-//          &::after {
-//            position: absolute;
-//            z-index: 25;
-//            content: '';
-//            left: 3rem;
-//            bottom: -2.937rem;
-//            border: .875rem solid transparent;
-//            border-top: .875rem solid $white;
-//          }
-        }
-      }
     &_header {
       color: $dark-accent;
       &:hover {
@@ -90,20 +83,6 @@
       @media (min-width: 40rem) {
         width: 7rem;
       }
-//      @media (min-width: 64rem) {
-//        &:hover {
-//          &::after {
-//            position: absolute;
-//            z-index: 25;
-//            content: '';
-//            left: 3rem;
-//            bottom: -2.937rem;
-//            border: .875rem solid transparent;
-//            border-top: .875rem solid $white;
-//          }
-//        }
-//      }
- 
     }
     &_footer {
       color: $white;

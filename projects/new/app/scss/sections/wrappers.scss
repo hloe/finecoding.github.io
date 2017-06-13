@@ -6,8 +6,8 @@
     right: 0;
     background-color: $white;
     @media (min-width: 64rem) {
-            position: fixed;
-      z-index: 25;
+                  position: fixed;
+            z-index: 25;
     }
   }
   &__promo {
@@ -36,7 +36,7 @@
   &__hire {
     background-color: $light-gray;
     @media (min-width: 40rem) {
-     @include retina('../images/map-medium.jpg', 2, cover, top center no-repeat);
+      @include retina('../images/map-medium.jpg', 2, cover, top center no-repeat);
     }
     @media (min-width: 64rem) {
       @include retina('../images/map-large.jpg', 2, cover, top center no-repeat);
