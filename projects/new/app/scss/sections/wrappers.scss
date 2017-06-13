@@ -14,13 +14,11 @@
     background-color: $dark-accent;
     @include retina('../images/promo-mobile.jpg', 2, cover, top center no-repeat);
     @media (min-width: 40rem) {
-      background-color: $dark-accent;
       @include retina('../images/promo-medium.jpg', 2, cover, top center no-repeat);
       background-attachment: fixed;
       height: 28rem;
     }
     @media (min-width: 64rem) {
-      background-color: $dark-accent;
       @include retina('../images/promo-large.jpg', 2, cover, top center no-repeat);
       background-attachment: fixed;
       height: 52.5rem;
