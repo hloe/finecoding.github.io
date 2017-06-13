@@ -6,19 +6,21 @@
     right: 0;
     background-color: $white;
     @media (min-width: 64rem) {
-                  position: fixed;
-            z-index: 25;
+      position: fixed;
+      z-index: 25;
     }
   }
   &__promo {
     background-color: $dark-accent;
     @include retina('../images/promo-mobile.jpg', 2, cover, top center no-repeat);
     @media (min-width: 40rem) {
+      background-color: $dark-accent;
       @include retina('../images/promo-medium.jpg', 2, cover, top center no-repeat);
       background-attachment: fixed;
       height: 28rem;
     }
     @media (min-width: 64rem) {
+      background-color: $dark-accent;
       @include retina('../images/promo-large.jpg', 2, cover, top center no-repeat);
       background-attachment: fixed;
       height: 52.5rem;
