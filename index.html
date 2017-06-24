@@ -11,6 +11,9 @@
 
   <title>Larysa Goroshanska | Portfolio</title>
 
+  <!-- LoDash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+
   <!-- Google Analytics -->
   <script>
     (function (i, s, o, g, r, a, m) {
@@ -32,25 +35,25 @@
 
 <body>
 
- <div class="wrapper wrapper_nav">
-   <nav class="nav nav_header container">
-     <a href="http://finecoding.net/" class="logo">fine<span class="logo_light">coding</span><span class="logo_small">.net</span></a>
-     <ul class="menu menu_header header__menu">
-       <li class="menu__item">
-         <a href="#home" class="menu__link">home</a>
-       </li>
-       <li class="menu__item">
-         <a href="#works" class="menu__link">portfolio</a>
-       </li>
-       <li class="menu__item">
-         <a href="#about" class="menu__link">about</a>
-       </li>
-       <li class="menu__item">
-         <a href="#hire-me" class="menu__link">hire me</a>
-       </li>
-     </ul>
-   </nav>
- </div>
+  <div class="wrapper wrapper_nav">
+    <nav class="nav nav_header container">
+      <a href="http://finecoding.net/" class="logo">fine<span class="logo_light">coding</span><span class="logo_small">.net</span></a>
+      <ul class="menu menu_header header__menu">
+        <li class="menu__item">
+          <a href="#home" class="menu__link">home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#works" class="menu__link">portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">about</a>
+        </li>
+        <li class="menu__item">
+          <a href="#hire-me" class="menu__link">hire me</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div class="wrapper wrapper_promo" id="home">
     <header class="promo container">
       <h1 class="promo__title">Larysa Goroshanska. Front-End Developer</h1>
@@ -74,7 +77,23 @@
     </div>
   
     <div class="wrapper wrapper_gray">
-      <div class="works__content container container__no-paddings" id="container"></div>
+      <div class="works__content container container__no-paddings" id="container">
+  
+        <script type="text/template" id="template">
+          <% _.forEach(data, function(item) { %>
+            <div class="works__content-item">
+              <a class="card-link" target="_blank" href="<%= item.link %>">
+                <img class="card__img" data-rjs="2" src="<%= item.image %>">
+                <div class="card__shadow">
+                  <h3 class="card__title"><%= item.title %></h3>
+                  <p class="card__text"><%= item.description %></p>
+                </div>
+              </a>
+            </div>
+          <% }); %>
+        </script>
+  
+      </div>
     </div>
   </section>
   <div class="wrapper wrapper_dark" id="about">
@@ -166,8 +185,8 @@
     </div>
   </footer>
 
-<!--  <script src="js/works.js"></script>-->
-    <script src="js/scripts.min.js"></script>
+  <!--  <script src="js/works.js"></script>-->
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
