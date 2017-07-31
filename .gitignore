@@ -2,6 +2,5 @@
 *.log
 *.db
 jQuery/
-React/
 node_modules/
 .sass-cache/
