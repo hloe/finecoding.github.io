@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.min.css">
-
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  
-  <base href="http://finecoding.net/">
-
+ 
   <title>Larysa Goroshanska | Portfolio</title>
 
-  <!-- LoDash -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
-
-  <!-- Google Analytics -->
+   <!-- Google Analytics -->
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -33,162 +25,10 @@
     ga('create', 'UA-83364655-1', 'auto');
     ga('send', 'pageview');
   </script>
-</head>
-
-<body>
-
-  <div class="wrapper wrapper_nav">
-    <nav class="nav nav_header container">
-      <a href="http://finecoding.net/" class="logo">fine<span class="logo_light">coding</span><span class="logo_small">.net</span></a>
-      <ul class="menu menu_header header__menu">
-        <li class="menu__item">
-          <a href="#home" class="menu__link">home</a>
-        </li>
-        <li class="menu__item">
-          <a href="#works" class="menu__link">portfolio</a>
-        </li>
-        <li class="menu__item">
-          <a href="#about" class="menu__link">about</a>
-        </li>
-        <li class="menu__item">
-          <a href="#hire-me" class="menu__link">hire me</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="wrapper wrapper_promo" id="home">
-    <header class="promo container">
-      <h1 class="promo__title">Larysa Goroshanska. Front-End Developer</h1>
-      <ul class="promo__list">
-        <li class="promo__list-item">HTML5</li>
-        <li class="promo__list-item">CSS3</li>
-        <li class="promo__list-item">Bootstrap</li>
-        <!--        <li class="promo__list-item">Foundation</li>-->
-        <li class="promo__list-item">JavaScript</li>
-        <li class="promo__list-item">jQuery</li>
-        <li class="promo__list-item">React</li>
-      </ul>
-      <a href="#about" class="promo__link">learn more</a>
-    </header>
-  </div>
-  <section class="works" id="works">
-    <div class="wrapper wrapper_light">
-      <header class="works__header container">
-        <h2 class="works__title">Portfolio</h2>
-      </header>
-    </div>
   
-    <div class="wrapper wrapper_gray">
-      <div class="works__content container container__no-paddings" id="container">
-  
-        <script type="text/template" id="template">
-          <% _.forEach(data, function(item) { %>
-            <div class="works__content-item">
-              <a class="card-link" target="_blank" href="<%= item.link %>">
-                <img class="card__img" data-rjs="2" src="<%= item.image %>">
-                <div class="card__shadow">
-                  <h3 class="card__title"><%= item.title %></h3>
-                  <p class="card__text"><%= item.description %></p>
-                </div>
-              </a>
-            </div>
-          <% }); %>
-        </script>
-  
-      </div>
-    </div>
-  </section>
-  <div class="wrapper wrapper_dark" id="about">
-    <section class="about section container">
-      <h2 class="section__title">About me</h2>
-      <div class="section__content">
-        <p>I specialize in Front-End Developement. I use in my work HTML5, CSS3, SCSS, JavaScript, jQuery and React; concepts Mobile First and Progressive Enhancement.</p>
-        <p>I am semifinalist of IT competitions, such as DEV CHALLENGE 11 and IT Challenges. My knowledge is confirmed by passed tests on <a href="https://www.upwork.com/o/profiles/users/_~0115a1a0cb29dcc236/" class="about__link" target="_blank">Upwork</a>.</p>
-      </div>
-    </section>
-  </div>
-  <section class="hire-me wrapper wrapper_hire section" id="hire-me">
-    <h2 class="section__title section__title_dark">Hire me</h2>
-    <div class="container section__content">
-      <p class="hire-me__text">If you are interested in work with me, please, don't be shy to write or call. I will answer asap.</p>
-  
-      <div class="hire-me__content">
-        <ul class="contacts">
-          <li class="contacts__item">
-            <h3 class="contacts__title">Phone number</h3>
-            <p>+38 (096)777-29-20</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Email</h3>
-            <p>goroshanska@gmail.com</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Skype</h3>
-            <p>larisa_goroshanska</p>
-          </li>
-        </ul>
-  
-        <ul class="icon__list">
-          <li class="icon__item">
-            <a href="https://www.facebook.com/goroshanska" class="icon__link icon__link_contact" target="_blank">
-              <svg class="icon__svg icon__svg_contact">
-                <use xlink:href="./i/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon__item">
-            <a href="https://www.linkedin.com/in/larysa-goroshanska/" class="icon__link icon__link_contact" target="_blank">
-              <svg class="icon__svg icon__svg_contact">
-                <use xlink:href="./i/sprite.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon__item">
-            <a href="https://github.com/hloe/hloe.github.io" class="icon__link icon__link_contact" target="_blank">
-              <svg class="icon__svg icon__svg_contact">
-                <use xlink:href="./i/sprite.svg#github"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon__item">
-            <a href="https://www.upwork.com/freelancers/~0115a1a0cb29dcc236" class="icon__link icon__link_contact" target="_blank">
-              <svg class="icon__svg icon__svg_contact">
-                <use xlink:href="./i/sprite.svg#upwork"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-  
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="wrapper wrapper_footer-nav">
-      <nav class="nav container">
-        <ul class="menu footer__menu">
-          <li class="menu__item">
-            <a href="#home" class="menu__link">home</a>
-          </li>
-          <li class="menu__item">
-            <a href="#works" class="menu__link">portfolio</a>
-          </li>
-          <li class="menu__item">
-            <a href="#about" class="menu__link">about</a>
-          </li>
-          <li class="menu__item">
-            <a href="#hire-me" class="menu__link">hire me</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  
-    <div class="wrapper wrapper_dark">
-      <p class="footer__text">Copyright &copy; 2017</p>
-    </div>
-  </footer>
-
-  <!--  <script src="js/works.js"></script>-->
-  <script src="js/scripts.min.js"></script>
-</body>
-
+  </head>
+  <body>
+   <div id="app"></div>
+   
+  <script type="text/javascript" src="index_bundle.js"></script></body>
 </html>
