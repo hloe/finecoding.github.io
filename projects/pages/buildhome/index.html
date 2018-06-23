@@ -1,160 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Google Analytics -->
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-83364655-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/styles.min.css">
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
   <title>Build Your Business</title>
 </head>
 
 <body>
 
-  <header class="header" id="home">
-    <div class="social">
-      <div class="logo">
-        <a href="#">
-          <img src="images/logo.png" alt="logo" data-rjs="2">
+  <!-- Header -->
+  <header class="header container" id="home">
+    <a href="#" class="logo">
+      <h1 class="logo__title">Build Home</h1>
+      <p class="logo__subtitle">Industrial Theme</p>
+    </a>
+  
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link hovered-icon">
+          <img src="./i/header/def/facebook.svg" class="hovered-icon__def" alt="F">
+          <img src="./i/header/hover/facebook.svg" class="hovered-icon__hov" alt="F">
         </a>
-        <div class="logo__text">
-          <h1 class="logo__title"><a href="#" class="logo__link">Build Home</a></h1>
-          <p class="logo__subtitle">
-            <a href="#" class="logo__link">Industrial Theme</a>
-          </p>
-        </div>
-      </div>
-
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="#">
-            <svg class="icon icon-social">
-              <use xlink:href="./i/sprite_header.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#">
-            <svg class="icon icon-social">
-              <use xlink:href="./i/sprite_header.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#">
-            <svg class="icon icon-social">
-              <use xlink:href="./i/sprite_header.svg#rss"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#">
-            <svg class="icon icon-social">
-              <use xlink:href="./i/sprite_header.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#">
-            <svg class="icon icon-social">
-              <use xlink:href="./i/sprite_header.svg#skype"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <nav class="header-nav">
-      <ul class="header-nav__list">
-        <li class="header-nav__item">
-          <a href="#home" class="menu-link menu-link__active">home</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#features" class="menu-link">features</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#services" class="menu-link">services</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#news" class="menu-link">news</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#" class="menu-link">shop</a>
-        </li>
-      </ul>
-
-      <form action="#" class="search-form header-nav__form">
-        <ul class="search-form__list">
-          <li class="search-form__item">
-            <input type="text" placeholder="Search...">
-          </li>
-          <li class="search-form__item">
-            <input type="submit" value="Send">
-          </li>
-        </ul>
-      </form>
-    </nav>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link hovered-icon">
+          <img src="./i/header/def/twitter.svg" class="hovered-icon__def" alt="T">
+          <img src="./i/header/hover/twitter.svg" class="hovered-icon__hov" alt="T">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link hovered-icon">
+          <img src="./i/header/def/rss.svg" class="hovered-icon__def" alt="rss">
+          <img src="./i/header/hover/rss.svg" class="hovered-icon__hov" alt="rss">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link hovered-icon">
+          <img src="./i/header/def/linkedin.svg" class="hovered-icon__def" alt="L">
+          <img src="./i/header/hover/linkedin.svg" class="hovered-icon__hov" alt="L">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link hovered-icon">
+          <img src="./i/header/def/skype.svg" class="hovered-icon__def" alt="Skype">
+          <img src="./i/header/hover/skype.svg" class="hovered-icon__hov" alt="Skype">
+        </a>
+      </li>
+    </ul>
   </header>
+  <!-- End of Header -->
+  <!-- Navigation -->
+  
+  <nav class="nav container">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#home" class="menu-link menu-link__active">home</a>
+      </li>
+      <li class="nav__item">
+        <a href="#features" class="menu-link">features</a>
+      </li>
+      <li class="nav__item">
+        <a href="#services" class="menu-link">services</a>
+      </li>
+      <li class="nav__item">
+        <a href="#news" class="menu-link">news</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="menu-link">shop</a>
+      </li>
+    </ul>
+  
+    <form action="#" class="search-form nav__form">
+      <ul class="search-form__list">
+        <li class="search-form__item">
+          <input type="text" class="search-form__input search-form__input_text" placeholder="Search...">
+        </li>
+        <li class="search-form__item">
+          <input type="submit" class="search-form__input search-form__input_submit" value="Send">
+        </li>
+      </ul>
+    </form>
+  </nav>
+  
+  <!-- End of Navigation -->
+  <!-- Slider -->
   <div class="slider">
     <div id="carousel-example-generic" class="carousel" data-ride="carousel">
-
+  
       <!-- Carousel Content -->
       <div class="carousel-inner">
         <div class="item active">
           <div class="carousel-caption">
-            <p class="slider__text">
-              <mark>build</mark>
-              <br>
-              <mark>your</mark>
-              <br>
-              <mark>business</mark>
+            <p class="slider__paragraph">
+              <span class="slider__text">build</span>
+            </p>
+            <p class="slider__paragraph">
+              <span class="slider__text">your</span>
+            </p>
+            <p class="slider__paragraph">
+              <span class="slider__text">business</span>
             </p>
           </div>
         </div>
         <div class="item">
           <div class="carousel-caption">
-            <p class="slider__text">
-              <mark>Lorem</mark>
-              <br>
-              <mark>ipsum</mark>
-              <br>
-              <mark>dolor</mark>
+            <p class="slider__paragraph">
+              <span class="slider__text">Lorem</span>
+            </p>
+            <p class="slider__paragraph">
+              <span class="slider__text">ipsum</span>
+            </p>
+            <p class="slider__paragraph">
+              <span class="slider__text">dolor</span>
             </p>
           </div>
         </div>
         <div class="item">
           <div class="carousel-caption">
-            <p class="slider__text">
-              <mark>sit</mark>
-              <br>
-              <mark>amet</mark>
-              <br>
-              <mark>consectetur</mark>
+            <p class="slider__paragraph">
+              <span class="slider__text">sit</span>
+            </p>
+            <p class="slider__paragraph">
+              <span class="slider__text">amet</span>
+            </p>
+            <p class="slider__paragraph">
+              <span class="slider__text">consectetur</span>
             </p>
           </div>
         </div>
       </div>
-
+  
       <!-- Pointers -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -163,66 +142,56 @@
       </ol>
     </div>
   </div>
+  <!-- End of Slider -->
+  <!-- Features -->
   <div class="features" id="features">
-
     <div class="features__item">
       <article class="features-article">
         <span class="features-article__number">01</span>
         <div class="features-article__content">
-          <svg class="icon icon-features">
-            <use xlink:href="./i/sprite_features.svg#settings"></use>
-          </svg>
+          <img src="./i/features/settings.svg" class=" icon icon-features" alt="">
           <h2 class="features-article__title">power inside</h2>
           <p class="features-article__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
           <a href="#" class="features-article__link">
-                Read more
-                <svg class="icon icon-arrow">
-                  <use xlink:href="./i/sprite_features.svg#arrow"></use>
-                </svg>
-              </a>
+            Read more
+            <img src="./i/features/arrow.svg" class="icon icon-arrow" alt="">
+          </a>
         </div>
       </article>
     </div>
-
+  
     <div class="features__item">
       <article class="features-article">
         <span class="features-article__number">02</span>
         <div class="features-article__content">
-          <svg class="icon icon-features">
-            <use xlink:href="./i/sprite_features.svg#params"></use>
-          </svg>
+          <img src="./i/features/params.svg" class="icon icon-features" alt="">
           <h2 class="features-article__title">new technologies</h2>
           <p class="features-article__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
           <a href="#" class="features-article__link">
-                Read more
-                <svg class="icon icon-arrow">
-                  <use xlink:href="./i/sprite_features.svg#arrow"></use>
-                </svg>
-              </a>
+            Read more
+            <img src="./i/features/arrow.svg" class="icon icon-arrow" alt="">
+          </a>
         </div>
       </article>
     </div>
-
+  
     <div class="features__item">
       <article class="features-article">
         <span class="features-article__number">03</span>
         <div class="features-article__content">
-          <svg class="icon icon-features">
-            <use xlink:href="./i/sprite_features.svg#truck"></use>
-          </svg>
+          <img src="./i/features/truck.svg" class="icon icon-features" alt="">
           <h2 class="features-article__title">fast support</h2>
           <p class="features-article__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
           <a href="#" class="features-article__link">
-                Read more
-                <svg class="icon icon-arrow">
-                  <use xlink:href="./i/sprite_features.svg#arrow"></use>
-                </svg>
-              </a>
+            Read more
+            <img src="./i/features/arrow.svg" class="icon icon-arrow" alt="">
+          </a>
         </div>
       </article>
     </div>
-
   </div>
+  <!-- End of Features -->
+  <!-- Services -->
   <div class="wrapper wrapper__services">
     <section class="services" id="services">
       <h2 class="services__title">our services</h2>
@@ -230,7 +199,7 @@
         <li class="services__item">
           <div class="service-card">
             <figure class="service-figure">
-              <p><img src="images/service1.jpg" class="service-figure__img" alt="working man" data-rjs="2"></p>
+              <img src="images/service1.jpg" class="service-figure__img" alt="working man" data-rjs="2">
               <figcaption class="service-figure__name">schedule services</figcaption>
             </figure>
             <div class="hover">+</div>
@@ -239,7 +208,7 @@
         <li class="services__item">
           <div class="service-card">
             <figure class="service-figure">
-              <p><img src="images/service2.jpg" class="service-figure__img" alt="big yellow track" data-rjs="2"></p>
+              <img src="images/service2.jpg" class="service-figure__img" alt="big yellow track" data-rjs="2">
               <figcaption class="service-figure__name">preventive maintence</figcaption>
             </figure>
             <div class="hover">+</div>
@@ -248,7 +217,7 @@
         <li class="services__item">
           <div class="service-card">
             <figure class="service-figure">
-              <p><img src="images/service3.jpg" class="service-figure__img" alt="man on the ladder" data-rjs="2"></p>
+              <img src="images/service3.jpg" class="service-figure__img" alt="man on the ladder" data-rjs="2">
               <figcaption class="service-figure__name">tire & wheel services</figcaption>
             </figure>
             <div class="hover">+</div>
@@ -257,7 +226,7 @@
         <li class="services__item">
           <div class="service-card">
             <figure class="service-figure">
-              <p><img src="images/service4.jpg" class="service-figure__img" alt="yellow pipes" data-rjs="2"></p>
+              <img src="images/service4.jpg" class="service-figure__img" alt="yellow pipes" data-rjs="2">
               <figcaption class="service-figure__name">repair services</figcaption>
             </figure>
             <div class="hover">+</div>
@@ -266,197 +235,217 @@
       </ul>
     </section>
   </div>
+  <!-- End of Services -->
+  <!-- News -->
   <div class="wrapper wrapper__news">
     <div class="news" id="news">
-
       <section class="latest-news">
         <h2 class="news__title">latest news</h2>
         <div class="latest-news__content">
           <article class="news-article">
             <img src="images/news1.jpg" alt="dividers" data-rjs="2">
             <div class="data">
-              <span class="data__month">Jan</span>
-              <span class="data__day">23</span>
+              <p class="data__month">Jan</p>
+              <p class="data__day">23</p>
             </div>
             <div class="news-article__content">
-              <h3><a href="#" class="news-article__title">Advanced Machinery Helps Improve Quality</a></h3>
-              <div class="news-article__subtitle">by <a href="#" class="news-article__link">cmsmasters</a></div>
-              <div class="news-article__subtitle">Comments (<a href="#" class="news-article__link">6</a>)</div>
+              <a href="#" class="news-article__title">
+                <h3>Advanced Machinery Helps Improve Quality</h3>
+              </a>
+              <p class="news-article__subtitle">
+                by <a href="#" class="news-article__link">cmsmasters</a>
+              </p>
+              <p class="news-article__subtitle">
+                <a class="news-article__link" href="#">
+                  Comments (<span class="news-article__link_blue">6</span>)
+                </a>
+              </p>
               <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
             </div>
           </article>
           <article class="news-article">
             <img src="images/news2.jpg" alt="dividers" data-rjs="2">
             <div class="data">
-              <span class="data__month">Jan</span>
-              <span class="data__day">21</span>
+              <p class="data__month">Jan</p>
+              <p class="data__day">21</p>
             </div>
             <div class="news-article__content">
-              <h3><a href="#" class="news-article__title">Powerful Techniques for Advanced Service</a></h3>
-              <div class="news-article__subtitle">by <a href="#" class="news-article__link">cmsmasters</a></div>
-              <div class="news-article__subtitle">Comments (<a href="#" class="news-article__link">3</a>)</div>
+              <a href="#" class="news-article__title">
+                <h3>Powerful Techniques for Advanced Service</h3>
+              </a>
+              <p class="news-article__subtitle">
+                by <a href="#" class="news-article__link">cmsmasters</a>
+              </p>
+              <p class="news-article__subtitle">
+                <a class="news-article__link" href="#">
+                  Comments (<span class="news-article__link_blue">3</span>)
+                </a>
+              </p>
               <p>Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
             </div>
           </article>
         </div>
       </section>
-
+  
       <section class="banners">
         <h2 class="news__title">banners place</h2>
         <div class="banners__content">
           <div class="panel">
             <h3 class="accordion open">accordion panel 1</h3>
-            <div class="accordion-content visible">
-              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+            <div class="accordion-content">
+              <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
             </div>
           </div>
           <div class="panel">
             <h3 class="accordion closed">accordion panel 2</h3>
             <div class="accordion-content hidden">
-              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+              <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
             </div>
           </div>
           <div class="panel">
             <h3 class="accordion closed">accordion panel 3</h3>
             <div class="accordion-content hidden">
-              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+              <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
             </div>
           </div>
           <div class="panel">
             <h3 class="accordion closed">accordion panel 4</h3>
             <div class="accordion-content hidden">
-              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+              <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
             </div>
           </div>
         </div>
       </section>
     </div>
   </div>
+  <!-- End of News -->
+  <!-- Logos -->
   <div class="logos">
     <a href="#" class="logos__link">
-      <img src="images/client_logo1.png" width="143" height="62" alt="RBP WHEELS" data-rjs="2">
+      <img src="images/client_logo1.png" class="logos_img" alt="RBP WHEELS" data-rjs="2">
     </a>
     <a href="#" class="logos__link">
-      <img src="images/client_logo2.png" width="143" height="62" alt="MOTO METAL" data-rjs="2">
+      <img src="images/client_logo2.png" class="logos_img" alt="MOTO METAL" data-rjs="2">
     </a>
     <a href="#" class="logos__link">
-      <img src="images/client_logo3.png" width="184" height="64" alt="2CRAVE" data-rjs="2">
+      <img src="images/client_logo3.png" class="logos_img" alt="2CRAVE" data-rjs="2">
     </a>
     <a href="#" class="logos__link">
-      <img src="images/client_logo4.png" width="143" height="62" alt="ATX Series" data-rjs="2">
+      <img src="images/client_logo4.png" class="logos_img" alt="ATX Series" data-rjs="2">
     </a>
     <a href="#" class="logos__link">
-      <img src="images/client_logo5.png" width="143" height="62" alt="Cruiser Alloy" data-rjs="2">
+      <img src="images/client_logo5.png" class="logos_img" alt="Cruiser Alloy" data-rjs="2">
     </a>
     <a href="#" class="logos__link">
-      <img src="images/client_logo6.png" width="143" height="62" alt="GEAR" data-rjs="2">
+      <img src="images/client_logo6.png" class="logos_img" alt="GEAR" data-rjs="2">
     </a>
   </div>
-  <div class="wrapper wrapper__links">
-    <section class="links">
-      <div class="links__container">
-        <h2 class="links__title">Socials</h2>
-        <ul>
-          <li class="links__item">
-            <a href="#" class="links__link">Facebook</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Flickr</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Twitter</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Vimeo</a>
-          </li>
-        </ul>
-      </div>
-      <div class="links__container">
-        <h2 class="links__title">Links</h2>
-        <ul>
-          <li class="links__item">
-            <a href="#" class="links__link">How to Write a Blog</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Create a Blog in 4 Steps</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">15 Tips to Increase Traffic</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">20 Blog Post Ideas</a>
-          </li>
-        </ul>
-      </div>
-      <div class="links__container">
-        <h2 class="links__title">Blogroll</h2>
-        <ul>
-          <li class="links__item">
-            <a href="#" class="links__link">Blogs Blog</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Roll Up Roll Up</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Blog Free</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Wordpress Blog</a>
-          </li>
-        </ul>
-      </div>
-      <div class="links__container">
-        <h2 class="links__title">About us</h2>
-        <ul>
-          <li class="links__item">
-            <a href="#" class="links__link">Agriculture</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Harvest</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Company news</a>
-          </li>
-          <li class="links__item">
-            <a href="#" class="links__link">Investor relations</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </div>
-  <div class="wrapper wrapper__footer">
-    <footer class="footer">
+  <!-- End of Logos -->
+  <footer>
+    <!-- Links -->
+    <div class="wrapper wrapper__links">
+      <ul class="links">
+        <li class="links__item">
+          Socials
+          <ul class="links__sublist">
+            <li class="links__subitem">
+              <a href="#" class="links__link">Facebook</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Flickr</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Twitter</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Vimeo</a>
+            </li>
+          </ul>
+        </li>
+        <li class="links__item">
+          Links
+          <ul class="links__sublist">
+            <li class="links__subitem">
+              <a href="#" class="links__link">How to Write a Blog</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Create Blog in 4 Steps</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">15 Tips to Increase Traffic</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">20 Blog Posts Ideas</a>
+            </li>
+          </ul>
+        </li>
+        <li class="links__item">
+          BlogRoll
+          <ul class="links__sublist">
+            <li class="links__subitem">
+              <a href="#" class="links__link">Blogs Blog</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Roll Up Roll Up</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Blog Free</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Wordpress Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="links__item">
+          About Us
+          <ul class="links__sublist">
+            <li class="links__subitem">
+              <a href="#" class="links__link">Agriculture</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Harvest</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Company News</a>
+            </li>
+            <li class="links__subitem">
+              <a href="#" class="links__link">Investor Relations</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- End of Links -->
+    <!-- Contacts -->
+    <div class="wrapper wrapper__contacts">
       <div class="contacts">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <svg class="icon icon-location footer__icon">
-              <use xlink:href="./i/sprite_footer.svg#location"></use>
-            </svg>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <img class="icon contacts__icon" src="./i/contacts/location.svg" alt="">
             BuildHomeLtd. Street Name 123 23 45 Cityname
           </li>
-          <li class="footer__item">
-            <svg class="icon icon-phone footer__icon">
-              <use xlink:href="./i/sprite_footer.svg#phone"></use>
-            </svg>
+          <li class="contacts__item">
+            <img class="icon contacts__icon" src="./i/contacts/phone.svg" alt="">
             +123 900 123 456
           </li>
-          <li class="footer__item">
-            <svg class="icon icon-message footer__icon">
-              <use xlink:href="./i/sprite_footer.svg#message"></use>
-            </svg>
-            info@buildhome.web
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@buildhome.web">
+              <img class="icon contacts__icon" src="./i/contacts/message.svg" alt="">
+              info@buildhome.web
+            </a>
           </li>
         </ul>
-      </div>
-      <div class="copyright">
         &copy; 2014 Build Home
       </div>
-    </footer>
-  </div>
+    </div>
+    <!-- End of Contacts -->
+  </footer>
 
-  <script src="js/retina.min.js"></script>
-  <script src="js/carousel.min.js"></script>
-  <script src="js/ziehharmonika.js"></script>
+  <script src="js/retina.min.js" async></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js" defer></script>
+  <script src="js/carousel.min.js" defer></script>
+  <script src="js/tabs.js" defer></script>
 
 </body>
 
