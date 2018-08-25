@@ -1,1 +1,148 @@
-!function(){"use strict";function e(e){e.preventDefault();var a,n=document.getElementsByClassName("input")[0].value;if(void 0!==n&&""!==n){a="https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo&q="+encodeURIComponent(n),t(a);document.getElementsByClassName("form")[0].reset()}}function t(e){function t(e){if(4==this.readyState)if(200==this.status){var t=JSON.parse(i.responseText);a(t)}else n();else n()}var i=new XMLHttpRequest;i.open("GET",e,!0),i.onreadystatechange=t,i.send()}function a(e){var t=_.map(e.hits,"webformatURL");t=_.flatten(t);var a=_.map(e.hits,"imageWidth"),n=_.map(e.hits,"imageHeight");document.getElementById("images-container").innerHTML="";var i=document.getElementsByClassName("grid")[0],s=document.createElement("div");s.className="grid-sizer",i.appendChild(s);for(var r=0;r<t.length;r++){var o=document.createElement("img");o.setAttribute("src",t[r]),a[r]>=n[r]?o.classList="grid-item grid-item--width2":a[r]<n[r]?o.classList="grid-item grid-item--width2 grid-item--height2":o.classList="grid-item",i.appendChild(o)}!function(){new Isotope(i,{itemSelector:".grid-item",percentPosition:!0,masonry:{columnWidth:".grid-sizer"}})}()}function n(){var e=document.createElement("p");e.innerHTML="Sorry, images search is'n available at the moment";var t=document.getElementById("images-container");t.innerHTML="",t.appendChild(e)}!function(){var e=(document.getElementsByClassName("input")[0].value,["travel","ocean","journey","tourist","sea","beach","plane","balloon","space","sky","dawn","bali","holiday","desert","mountains","forest","sunset","lake","river","field","city","london","prague","krakow","australia","moon"]),a=Math.floor(Math.random()*e.length),n=n="https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo&q="+a;t(n),document.getElementsByClassName("form")[0].reset()}(),document.getElementsByClassName("form")[0].addEventListener("submit",e)}();
+(function () {
+  'use strict';
+
+  initialRequest();
+
+
+  // Initiate form submitting
+  var form = document.getElementsByClassName('form')[0];
+  form.addEventListener('submit', requestPixabay);
+
+  function initialRequest() {
+
+    // Get request from input and encode it
+    var request = document.getElementsByClassName('input')[0].value;
+
+    var randomWords = ['travel', 'ocean', 'journey', 'tourist', 'sea', 'beach', 'plane', 'balloon', 'space', 'sky', 'dawn', 'bali', 'holiday', 'desert', 'mountains', 'forest', 'sunset', 'lake', 'river', 'field', 'city', 'london', 'prague', 'krakow', 'australia', 'moon'];
+
+    var randomRequest = Math.floor(Math.random() * randomWords.length);
+
+    // Create url for request
+    var requestedUrl = requestedUrl = 'https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo&q=' + randomRequest;
+
+    makeRequest(requestedUrl);
+
+    // Clear input field after sending request
+    var form = document.getElementsByClassName('form')[0];
+    form.reset();
+
+  }
+
+
+  function requestPixabay(event) {
+
+    event.preventDefault();
+
+    // Get request from input and encode it
+    var request = document.getElementsByClassName('input')[0].value;
+
+    // Create url for request
+    var requestedUrl;
+    if ((request !== undefined) && (request !== '')) {
+      requestedUrl = 'https://pixabay.com/api/?key=5329767-c1e7be6357fccc39d535e11ce&per_page=12&image_type=photo&q=' + encodeURIComponent(request);
+
+      makeRequest(requestedUrl);
+
+      // Clear input field after sending request
+      var form = document.getElementsByClassName('form')[0];
+      form.reset();
+    }
+
+  }
+
+  function makeRequest(url) {
+    // Create new object XMLHttpRequest
+    var xhr = new XMLHttpRequest();
+    // Confige object XMLHttpRequest
+    xhr.open('GET', url, true);
+    xhr.onreadystatechange = receiveResponse;
+    xhr.send();
+
+
+    function receiveResponse(e) {
+      if (this.readyState == 4) {
+        // xhr.readyState == 4, so we've received the complete server response
+        if (this.status == 200) { // xhr.status == 200, so the response is good
+
+          var result = JSON.parse(xhr.responseText);
+          showPictures(result);
+        } else {
+          ups();
+        }
+      } else {
+        ups();
+      }
+    }
+  }
+
+  // Get images links from object
+  function takeLinks(data) {}
+
+  // Show images in HTML
+  function showPictures(data) {
+    // Get pictures links
+    var links = _.map(data.hits, 'webformatURL');
+    links = _.flatten(links);
+
+    // Get pictures sizes
+    var imageWidth = _.map(data.hits, 'imageWidth');
+    var imageHeight = _.map(data.hits, 'imageHeight');
+
+
+
+    // Using Lodash template is impossible because of Isotope (Masonry and Isotope doesn't see classes from template)
+    var container = document.getElementById('images-container');
+    container.innerHTML = '';
+
+    var grid = document.getElementsByClassName('grid')[0];
+    // var grid = document.createElement('div');
+    //    grid.className = 'grid';
+    //    container.appendChild(grid);
+    var sizer = document.createElement('div');
+    sizer.className = 'grid-sizer';
+    grid.appendChild(sizer);
+
+    for (var i = 0; i < links.length; i++) {
+      var img = document.createElement('img');
+      img.setAttribute('src', links[i]);
+
+      // Set class depending on image sizes      
+      if (imageWidth[i] >= imageHeight[i]) {
+        img.className = 'grid-item grid-item--width2';
+      } else if (imageWidth[i] < imageHeight[i]) {
+        img.className = 'grid-item grid-item--width2 grid-item--height2';
+      } else {
+        img.className = 'grid-item';
+      }
+
+      grid.appendChild(img);
+    }
+
+
+    isotopeInit();
+
+    function isotopeInit() {
+
+      var iso = new Isotope(grid, {
+        // options
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.grid-sizer'
+        }
+      });
+
+    }
+
+  }
+
+  // Show that images aren't accessible
+  function ups() {
+    var ups = document.createElement('p');
+    ups.innerHTML = 'Sorry, images search is\'n available at the moment';
+    var container = document.getElementById('images-container');
+    container.innerHTML = '';
+    container.appendChild(ups);
+  }
+
+})();

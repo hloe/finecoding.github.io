@@ -7,27 +7,14 @@
 
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Hot Dogs</title>
-  
-  <!-- Google Analytics -->
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-83364655-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 </head>
 
 <body>
+  <!--//= template/promo.html-->
+  <!--//= template/nav.html-->
+  <!--//= template/header.html-->
+  <!--//= template/content.html-->
+  <!--//= template/footer.html-->
 
   <div class="promo">
     <a href="#" class="promo__link" target="_blank">
@@ -53,39 +40,39 @@
   <header class="header row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
       <h1 class="header__title">
-            Dirty Dogs serves all-beef, vegan and vegatagian hot dogs.
-        </h1>
+        Dirty Dogs serves all-beef, vegan and vegatagian hot dogs.
+      </h1>
       <a href="#" class="blue-button header__link" target="_blank">More Dogs ‘n Make Em Hot</a>
     </div>
   </header>
   <!-- Don't use Bootstrap in this section, because it makes impossible to align text vertically -->
   <div class="content">
     <div class="content__line">
-      <article class="article content__item content__item--text">
+      <article class="article content__item content__item_text">
         <h2 class="article__title">Gormet All Beef Hotdogs</h2>
         <p class="article__text">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
       </article>
-  
+
       <div class="content__item">
         <img src="images/photo1.jpg" alt="beef hot-dog" class="photo" data-rjs="2">
       </div>
     </div>
-  
+
     <div class="content__line">
-      <div class="content__item content__item--hidden-mobile">
+      <div class="content__item content__item_hidden-mobile">
         <img src="images/photo2.jpg" alt="vegan hot-dog" class="photo" data-rjs="2">
       </div>
-  
-      <article class="article content__item content__item--text">
+
+      <article class="article content__item content__item_text">
         <h2 class="article__title">Vegan Hotdogs</h2>
         <p class="article__text">
           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
         </p>
       </article>
     </div>
-  
+
     <div class="content__line">
-      <article class="article content__item content__item--text">
+      <article class="article content__item content__item_text">
         <h2 class="article__title">Vegitarian Hotdogs</h2>
         <p class="article__text">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
       </article>
@@ -100,20 +87,20 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-8">
       <address class="address footer__address">
-          <ul class="address__list">
-            <li class="address__item">274 Marconi Blvd. Columbus, Ohio 43215</li>
-            <li class="address__item">
-              <a href="tel:+6145380095" class="address__link">
+        <ul class="address__list">
+          <li class="address__item">274 Marconi Blvd. Columbus, Ohio 43215</li>
+          <li class="address__item">
+            <a href="tel:+6145380095" class="address__link">
               614.538.0095
-              </a>
-            </li>
-            <li class="address__item">
-              <a href="#" class="address__link">
+            </a>
+          </li>
+          <li class="address__item">
+            <a href="#" class="address__link">
               Contact Us
-              </a>
-            </li>
-          </ul>
-        </address>
+            </a>
+          </li>
+        </ul>
+      </address>
     </div>
   </footer>
 
